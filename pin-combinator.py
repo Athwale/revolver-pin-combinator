@@ -45,6 +45,39 @@ class Combinator:
             if category not in yml.keys():
                 raise ValueError(str(category) + ' category is required in pin file')
 
+        for category in yml.keys():
+            # Check at least one record in each category
+            if not yml[category]:
+                raise ValueError('Category: ' + str(category) + ' has not records')
+            # Check pin format
+            for part in yml[category]:
+                elements = part.split('-')
+                print(elements)
+                # Check pin name
+                try:
+                    err = int(elements[0])
+                    if err:
+                        raise AttributeError(str(part) + ' has incorrect format, name must not be a number')
+                except ValueError as _:
+                    continue
+                except AttributeError as e:
+                    raise ValueError(str(e))
+                # Check pin size
+                try:
+                    err = int(elements[1])
+                    print(err)
+                except ValueError as _:
+                    raise ValueError(str(part) + ' has incorrect format, size must be a number')
+
+                # Check pin count
+
+    def _print_database(self):
+        """
+
+        :return:
+        """
+        pass
+
     def load(self, file) -> bool:
         """
         Open and validate the pin database.
