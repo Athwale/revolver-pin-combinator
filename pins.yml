@@ -16,6 +16,6 @@ springs:
   # TYPE-STRENGTH-COUNT
   # CO - copper, ST - steel
   - CO-1-4
-  - CO-E-4
+  - CO-1-4
   - ST-1-4
   - ST-1-4

@@ -12,6 +12,7 @@ class Combinator:
 
     def __init__(self):
         self._pin_database = None
+        self._count_dict = None
 
         self._parser = optparse.OptionParser('Usage: pin-combinator.py -f PIN_FILE [options]')
 
@@ -49,6 +50,7 @@ class Combinator:
             # Check at least one record in each category
             if not yml[category]:
                 raise ValueError('Category: ' + str(category) + ' has not records')
+
             # Check pin format
             for part in yml[category]:
                 elements = part.split('-')
@@ -59,17 +61,25 @@ class Combinator:
                     if err:
                         raise AttributeError(str(part) + ' has incorrect format, name must not be a number')
                 except ValueError as _:
-                    continue
+                    pass
                 except AttributeError as e:
                     raise ValueError(str(e))
-                # Check pin size
+                # Check pin size and count
                 try:
-                    err = int(elements[1])
-                    print(err)
+                    int(elements[1])
+                    int(elements[2])
                 except ValueError as _:
-                    raise ValueError(str(part) + ' has incorrect format, size must be a number')
+                    raise ValueError(str(part) + ' has incorrect format, size and count must be a number')
 
-                # Check pin count
+        # Check that we have enough parts for the selected lock size
+        chamber_count = self._options.lock_size
+        self._count_dict = {}
+        for category in yml.keys():
+            self._count_dict[category] = 0
+            for part in yml[category]:
+                pin_count = int(part.split('-')[2])
+                self._count_dict[category] += pin_count
+
 
     def _print_database(self):
         """
