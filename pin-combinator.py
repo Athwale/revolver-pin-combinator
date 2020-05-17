@@ -4,8 +4,6 @@ import os
 import sys
 
 import yaml
-import yamllint
-from yaml.scanner import ScannerError
 
 
 class Combinator:
@@ -20,7 +18,7 @@ class Combinator:
                                 action="store", dest="pin_file",
                                 help="Select a pin database to use")
 
-        self._parser.add_option('-l', '--lock', type='string',
+        self._parser.add_option('-l', '--lock', type='int',
                                 action="store", dest="lock_size",
                                 help="Select a lock size 5-7 pins (default 6)")
 
@@ -29,6 +27,8 @@ class Combinator:
             self._parser.error('Pin file required')
         if not self._options.lock_size:
             self._options.lock_size = 6
+        if self._options.lock_size < 5 or self._options.lock_size > 7:
+            self._parser.error('Lock size must be 5-7')
 
         if not self.load(os.path.realpath(self._options.pin_file)):
             print('Combinator error')
@@ -54,7 +54,6 @@ class Combinator:
             # Check pin format
             for part in yml[category]:
                 elements = part.split('-')
-                print(elements)
                 # Check pin name
                 try:
                     err = int(elements[0])
@@ -79,6 +78,10 @@ class Combinator:
             for part in yml[category]:
                 pin_count = int(part.split('-')[2])
                 self._count_dict[category] += pin_count
+        for name, pins in self._count_dict.items():
+            if pins < self._options.lock_size:
+                raise ValueError('Not enough ' + str(name) + ' (' + str(pins) + ')' + ' for a ' +
+                                 str(self._options.lock_size) + ' pin lock')
 
 
     def _print_database(self):
