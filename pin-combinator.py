@@ -40,7 +40,6 @@ class Combinator:
         :param yml: Loaded yaml data
         :return: True if correct.
         """
-        print(yml)
         # Check main categories
         for category in ['key-pins', 'driver-pins', 'springs']:
             if category not in yml.keys():
@@ -71,7 +70,6 @@ class Combinator:
                     raise ValueError(str(part) + ' has incorrect format, size and count must be a number')
 
         # Check that we have enough parts for the selected lock size
-        chamber_count = self._options.lock_size
         self._count_dict = {}
         for category in yml.keys():
             self._count_dict[category] = 0
@@ -83,13 +81,29 @@ class Combinator:
                 raise ValueError('Not enough ' + str(name) + ' (' + str(pins) + ')' + ' for a ' +
                                  str(self._options.lock_size) + ' pin lock')
 
+        # Check for duplicate pins
+        pin_list = []
+        for category in yml.keys():
+            pin_list.extend(yml[category])
+        for item in pin_list:
+            if pin_list.count(item) > 1:
+                raise ValueError('Duplicate record: ' + str(item) + ' in pin file')
 
-    def _print_database(self):
-        """
+        self._print_database(yml)
+        return True
 
-        :return:
+    def _print_database(self, yml) -> None:
         """
-        pass
+        Nicely print the database and useful data.
+        :param yml: Loaded pin database
+        :return: None
+        """
+        for category in yml.keys():
+            print(category + ':')
+            for pin in yml[category]:
+                print(pin + ', ', end='')
+            print()
+        print('\nSummary:\n' + str(self._count_dict))
 
     def load(self, file) -> bool:
         """
