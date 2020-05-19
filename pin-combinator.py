@@ -30,15 +30,34 @@ class Combinator:
         if self._options.lock_size < 5 or self._options.lock_size > 7:
             self._parser.error('Lock size must be 5-7')
 
-        if not self.load(os.path.realpath(self._options.pin_file)):
-            print('Combinator error')
+        try:
+            self.load(os.path.realpath(self._options.pin_file))
+        except ValueError as e:
+            print(e)
+            print('Load error')
             sys.exit(1)
 
-    def _validate(self, yml) -> bool:
+        try:
+            self._combine()
+        except ValueError as e:
+            print(e)
+            print('Combinator error')
+            sys.exit(2)
+
+    def _combine(self):
+        """
+        Create the pin, spring combinations.
+        :return: None
+        """
+        with open(self._pin_database, "r") as yml:
+            data = yaml.safe_load(yml)
+            print(data)
+
+    def _validate(self, yml):
         """
         Check the correctness of the pin database
         :param yml: Loaded yaml data
-        :return: True if correct.
+        :return: None
         """
         # Check main categories
         for category in ['key-pins', 'driver-pins', 'springs']:
@@ -87,10 +106,9 @@ class Combinator:
             pin_list.extend(yml[category])
         for item in pin_list:
             if pin_list.count(item) > 1:
-                raise ValueError('Duplicate record: ' + str(item) + ' in pin file')
+                raise ValueError('Duplicate record: ' + str(item) + ' in pin file: ' + str(self._pin_database))
 
         self._print_database(yml)
-        return True
 
     def _print_database(self, yml) -> None:
         """
@@ -103,23 +121,18 @@ class Combinator:
             for pin in yml[category]:
                 print(pin + ', ', end='')
             print()
-        print('\nSummary:\n' + str(self._count_dict))
+        print('\nSummary:\n' + str(self._count_dict) + '\n')
 
-    def load(self, file) -> bool:
+    def load(self, file):
         """
         Open and validate the pin database.
         :param file: str, database file name.
-        :return: True if opening and validating succeeded.
+        :return: None
         """
         self._pin_database = file
-        try:
-            with open(file, "r") as yml:
-                data = yaml.safe_load(yml)
-                result = self._validate(data)
-        except ValueError as e:
-            print(e)
-            return False
-        return result
+        with open(self._pin_database, "r") as yml:
+            data = yaml.safe_load(yml)
+            self._validate(data)
 
 
 if __name__ == '__main__':
