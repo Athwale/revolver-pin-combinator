@@ -53,6 +53,7 @@ class Combinator:
             data = yaml.safe_load(yml)
             print(data)
 
+
     def _validate(self, yml):
         """
         Check the correctness of the pin database
@@ -121,7 +122,10 @@ class Combinator:
             for pin in yml[category]:
                 print(pin + ', ', end='')
             print()
-        print('\nSummary:\n' + str(self._count_dict) + '\n')
+        print('\nSummary:')
+        for category, count in self._count_dict.items():
+            print(str(category).replace('-', ' ') + ': ' + str(count))
+        print()
 
     def load(self, file):
         """
