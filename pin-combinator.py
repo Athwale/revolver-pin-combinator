@@ -111,13 +111,9 @@ class Combinator:
                 target_list.append(Part(category, elements[0], int(elements[1]), int(elements[2])))
 
         # Check that we have enough parts for the selected lock size
-        for part_list in [self._key_pin_list, self._driver_pin_list, self._spring_list]:
-            count = 0
-            part = None
-            for part in part_list:
-                count += part.get_count()
+        for kind, count in Part.count_dict.items():
             if count < self._options.lock_size:
-                raise ValueError('Not enough ' + part.get_kind().replace('-', ' ').upper() + ' (' + str(count) + ')'
+                raise ValueError('Not enough ' + kind.replace('-', ' ').upper() + ' (' + str(count) + ')'
                                  + ' for a ' + str(self._options.lock_size) + ' pin lock')
 
         self._print_database()
@@ -127,14 +123,15 @@ class Combinator:
         Nicely print the database and useful data.
         :return: None
         """
-        print('Key pins:\n')
+        print('Key pins:')
         print(self._key_pin_list)
         print('Driver pins:')
         print(self._driver_pin_list)
         print('Springs:')
         print(self._spring_list)
         print('Summary:')
-        print(self.)
+        for kind, count in Part.count_dict.items():
+            print(kind.replace('-', ' ') + ': ' + str(count))
 
     def load(self, file):
         """
@@ -150,9 +147,8 @@ class Combinator:
 
 class Part:
 
-    key_pin_count = 0
-    driver_pin_count = 0
-    spring_count = 0
+    # Static variable counting how many of each part type we have.
+    count_dict = {'key-pins': 0, 'driver-pins': 0, 'springs': 0}
 
     def __init__(self, kind: str, name: str, size: int, count: int):
         """
@@ -166,6 +162,8 @@ class Part:
         self._name = name
         self._size = size
         self._count = count
+
+        Part.count_dict[kind] += self._count
 
     def get_kind(self) -> str:
         """
