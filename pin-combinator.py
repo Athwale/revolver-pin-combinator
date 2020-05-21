@@ -11,7 +11,6 @@ class Combinator:
 
     def __init__(self):
         self._pin_database = None
-        self._count_dict = None
         self._key_pin_list = []
         self._driver_pin_list = []
         self._spring_list = []
@@ -53,11 +52,7 @@ class Combinator:
         Create the pin, spring combinations.
         :return: None
         """
-        with open(self._pin_database, "r") as yml:
-            data = yaml.safe_load(yml)
-            # Get all key pin combinations
-            # Create a list of all key pins but do not include more of a type than the lock size
-            key_pin_list = []
+
 
     def _validate(self, yml):
         """
@@ -113,37 +108,33 @@ class Combinator:
                 else:
                     target_list = self._spring_list
 
-                target_list.append(Part(category, elements[0], elements[1], elements[2]))
+                target_list.append(Part(category, elements[0], int(elements[1]), int(elements[2])))
 
         # Check that we have enough parts for the selected lock size
-        self._count_dict = {}
-        for category in yml.keys():
-            self._count_dict[category] = 0
-            for part in yml[category]:
-                pin_count = int(part.split('-')[2])
-                self._count_dict[category] += pin_count
-        for name, pins in self._count_dict.items():
-            if pins < self._options.lock_size:
-                raise ValueError('Not enough ' + str(name) + ' (' + str(pins) + ')' + ' for a ' +
-                                 str(self._options.lock_size) + ' pin lock')
+        for part_list in [self._key_pin_list, self._driver_pin_list, self._spring_list]:
+            count = 0
+            part = None
+            for part in part_list:
+                count += part.get_count()
+            if count < self._options.lock_size:
+                raise ValueError('Not enough ' + part.get_kind().replace('-', ' ').upper() + ' (' + str(count) + ')'
+                                 + ' for a ' + str(self._options.lock_size) + ' pin lock')
 
-        self._print_database(yml)
+        self._print_database()
 
-    def _print_database(self, yml) -> None:
+    def _print_database(self) -> None:
         """
         Nicely print the database and useful data.
-        :param yml: Loaded pin database
         :return: None
         """
-        for category in yml.keys():
-            print(category + ':')
-            for pin in yml[category]:
-                print(pin + ', ', end='')
-            print()
-        print('\nSummary:')
-        for category, count in self._count_dict.items():
-            print(str(category).replace('-', ' ') + ': ' + str(count))
-        print()
+        print('Key pins:\n')
+        print(self._key_pin_list)
+        print('Driver pins:')
+        print(self._driver_pin_list)
+        print('Springs:')
+        print(self._spring_list)
+        print('Summary:')
+        print(self.)
 
     def load(self, file):
         """
@@ -158,6 +149,10 @@ class Combinator:
 
 
 class Part:
+
+    key_pin_count = 0
+    driver_pin_count = 0
+    spring_count = 0
 
     def __init__(self, kind: str, name: str, size: int, count: int):
         """
@@ -204,7 +199,8 @@ class Part:
         return '(' + self._kind + '-' + self._name + '-' + str(self._size) + '-' + str(self._count) + ')'
 
     def __repr__(self):
-        return str(self)
+        return self._name + '-' + str(self._size) + '-' + str(self._count)
+
 
 if __name__ == '__main__':
     combinator = Combinator()
