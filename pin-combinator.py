@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+import functools
 import optparse
 import os
 import sys
 import itertools
+import more_itertools
 
 import yaml
 
@@ -52,6 +54,37 @@ class Combinator:
         Create the pin, spring combinations.
         :return: None
         """
+        combinations = {}
+        print('\nCombinations:')
+        # Fill the list with suitable pins and springs, but only as much as lock size
+        for part_list in [self._key_pin_list, self._driver_pin_list, self._spring_list]:
+            combinations[part_list[0].get_kind()] = []
+            to_combine = []
+            for part in part_list:
+                amount = self._options.lock_size
+                if part.get_count() < self._options.lock_size:
+                    amount = part.get_count()
+                for _ in range(amount):
+                    to_combine.append(part.get_copy())
+
+            print('Calculating ' + str(part_list[0].get_kind()).replace('-', ' ')[:-1] + ' combinations...')
+            combinations[part_list[0].get_kind()] = itertools.permutations(sorted(to_combine), self._options.lock_size)
+
+        # Last 2000 known combinations
+        i = 0
+        last_known_list = []
+        for kind, result in combinations.items():
+            print(kind)
+            for combination in result:
+                if combination not in last_known_list:
+                    last_known_list.append(combination)
+                    print(combination)
+                    i =+ 1
+                    if len(last_known_list) >= 2000:
+                        last_known_list.pop(0)
+            print(i)
+            sys.exit(1)
+
 
 
     def _validate(self, yml):
@@ -129,7 +162,7 @@ class Combinator:
         print(self._driver_pin_list)
         print('Springs:')
         print(self._spring_list)
-        print('Summary:')
+        print('\nSummary:')
         for kind, count in Part.count_dict.items():
             print(kind.replace('-', ' ') + ': ' + str(count))
 
@@ -145,6 +178,7 @@ class Combinator:
             self._validate(data)
 
 
+@functools.total_ordering
 class Part:
 
     # Static variable counting how many of each part type we have.
@@ -193,11 +227,24 @@ class Part:
         """
         return self._count
 
+    def get_copy(self):
+        """
+        Return a new instance of it self.
+        :return: Return a new instance of it self.
+        """
+        return Part(self.get_kind(), self._name, self.get_size(), self._count)
+
     def __str__(self):
         return '(' + self._kind + '-' + self._name + '-' + str(self._size) + '-' + str(self._count) + ')'
 
     def __repr__(self):
         return self._name + '-' + str(self._size) + '-' + str(self._count)
+
+    def __lt__(self, other):
+        return self.__repr__() < other.__repr__()
+
+    def __eq__(self, other):
+        return self.__repr__() == other.__repr__()
 
 
 if __name__ == '__main__':
