@@ -3,8 +3,7 @@ import functools
 import optparse
 import os
 import sys
-import itertools
-import more_itertools
+from more_itertools import distinct_permutations
 
 import yaml
 
@@ -68,20 +67,16 @@ class Combinator:
                     to_combine.append(part.get_copy())
 
             print('Calculating ' + str(part_list[0].get_kind()).replace('-', ' ')[:-1] + ' combinations...')
-            combinations[part_list[0].get_kind()] = itertools.permutations(sorted(to_combine), self._options.lock_size)
+            combinations[part_list[0].get_kind()] = sorted(distinct_permutations(sorted(to_combine),
+                                                                                 self._options.lock_size))
 
-        # Last 2000 known combinations
         i = 0
-        last_known_list = []
         for kind, result in combinations.items():
             print(kind)
             for combination in result:
-                if combination not in last_known_list:
-                    last_known_list.append(combination)
-                    print(combination)
-                    i =+ 1
-                    if len(last_known_list) >= 2000:
-                        last_known_list.pop(0)
+                print(combination)
+                i += 1
+
             print(i)
             sys.exit(1)
 

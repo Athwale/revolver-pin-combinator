@@ -1,4 +1,7 @@
 # revolver-pin-combinator
+### Software requirements:
+Requires python3-more-itertools version 8.3.0+
+
 ### What this is
 A small program for generating pin combinations for the sparrows revolver lock.
 It comes with a pin database filled with pins and springs from my sparrows revolver.
