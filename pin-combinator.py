@@ -15,6 +15,7 @@ class Combinator:
         self._key_pin_list = []
         self._driver_pin_list = []
         self._spring_list = []
+        self._combinations = {}
 
         self._parser = optparse.OptionParser('Usage: pin-combinator.py -f PIN_FILE [options]')
 
@@ -48,16 +49,16 @@ class Combinator:
             print('Combinator error')
             sys.exit(2)
 
-    def _combine(self):
+    def _combine(self) -> None:
         """
-        Create the pin, spring combinations.
+        Create the key pin, driver pin, spring combinations and print counts.
         :return: None
         """
-        combinations = {}
-        print('\nCombinations:')
+        print('\nCalculating combinations:')
+        print('Depending on your computer speed, number of pins in pin find and lock size, this can take a long time.')
         # Fill the list with suitable pins and springs, but only as much as lock size
         for part_list in [self._key_pin_list, self._driver_pin_list, self._spring_list]:
-            combinations[part_list[0].get_kind()] = []
+            self._combinations[part_list[0].get_kind()] = []
             to_combine = []
             for part in part_list:
                 amount = self._options.lock_size
@@ -66,20 +67,21 @@ class Combinator:
                 for _ in range(amount):
                     to_combine.append(part.get_copy())
 
-            print('Calculating ' + str(part_list[0].get_kind()).replace('-', ' ')[:-1] + ' combinations...')
-            combinations[part_list[0].get_kind()] = sorted(distinct_permutations(sorted(to_combine),
-                                                                                 self._options.lock_size))
+            part_type = str(part_list[0].get_kind())
+            print('Calculating ' + part_type.replace('-', ' ')[:-1] + ' combinations:', end=' ')
+            # Create combination iterators
+            self._combinations[part_type] = sorted(distinct_permutations(sorted(to_combine), self._options.lock_size))
+            # Print how many combinations we have
+            count = 0
+            for _ in self._combinations[part_type]:
+                count += 1
+            print(count)
 
-        i = 0
-        for kind, result in combinations.items():
-            print(kind)
-            for combination in result:
-                print(combination)
-                i += 1
-
-            print(i)
-            sys.exit(1)
-
+    def _print_combinations(self) -> None:
+        """
+        Print the finished lock combinations on screen and save then into a file.
+        :return: None
+        """
 
 
     def _validate(self, yml):
