@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 import functools
+import locale
 import optparse
 import os
 import sys
-import locale
+from itertools import product
 
 import yaml
-from itertools import product
 from more_itertools import distinct_permutations
 
 
@@ -18,6 +18,7 @@ class Combinator:
         self._driver_pin_list = []
         self._spring_list = []
         self._combinations = {}
+        self._locks = None
         self._counts = {}
 
         # Set large numbers to display comma separators
@@ -60,7 +61,7 @@ class Combinator:
         :return: None
         """
         print('\nCalculating combinations:')
-        print('Depending on computer speed, number of pins in pin file and lock size, \nthis can take a long time.\n')
+        print('Depending on computer speed, number of pins in pin file and lock size, this can take a long time.\n')
         # Fill the list with suitable pins and springs, but only as much as lock size
         for part_list in [self._key_pin_list, self._driver_pin_list, self._spring_list]:
             self._combinations[part_list[0].get_kind()] = []
@@ -74,7 +75,7 @@ class Combinator:
 
             part_type = str(part_list[0].get_kind())
             self._counts[part_type] = 0
-            print('Calculating ' + part_type.replace('-', ' ')[:-1] + ' combinations:', end=' ')
+            print(('Calculating ' + part_type.replace('-', ' ')[:-1] + ' combinations:').ljust(36), end=' ')
             # Create combination iterators
             self._combinations[part_type] = sorted(distinct_permutations(sorted(to_combine), self._options.lock_size))
             # Print how many combinations we have
@@ -82,6 +83,11 @@ class Combinator:
                 self._counts[part_type] += 1
             print(self._counts[part_type])
 
+        self._locks = product(self._combinations['key-pins'], self._combinations['driver-pins'],
+                              self._combinations['springs'])
+        lock_total = self._counts['key-pins'] * self._counts['driver-pins'] * self._counts['springs']
+        print(
+            'Total lock configurations: '.ljust(37) + str(locale.format_string("%d", lock_total, grouping=True)) + '\n')
         self._save_combinations()
 
     def _save_combinations(self) -> None:
@@ -89,20 +95,13 @@ class Combinator:
         Print the finished lock combinations on screen and save then into a file.
         :return: None
         """
-        lock_count = self._counts['key-pins'] * self._counts['driver-pins'] * self._counts['springs']
-        print('\nLock combinations: ' + str(locale.format_string("%d", lock_count, grouping=True)))
-        print()
-        locks = product(self._combinations['key-pins'], self._combinations['driver-pins'], self._combinations['springs'])
         i = 1
-        for lock in locks:
-            print(i, end='\r')
-            print(self._get_lock_string(lock, i))
-            if i == 5:
-                break
+        for lock in self._locks:
+            print(self._format_lock(lock, i))
             i += 1
 
     @staticmethod
-    def _get_lock_string(lock, number: int) -> str:
+    def _format_lock(lock, number: int) -> str:
         """
         Get a string representation of a fully assembled lock
         :param lock: Tuple of 3 combinations
@@ -114,7 +113,7 @@ class Combinator:
         springs = lock[2]
         assembled = ''
 
-        print('Lock: ' + str(number))
+        print('Lock: ' + str(locale.format_string("%d", number, grouping=True)) + ':')
         for part_type in [springs, driver_pins, key_pins]:
             assembled += str(part_type[0].get_kind().replace('-', ' ') + ': ').ljust(13)
             for part in part_type:
@@ -200,8 +199,8 @@ class Combinator:
         print(self._spring_list)
         print('\nSummary:')
         for kind, count in Part.count_dict.items():
-            print(kind.replace('-', ' ') + ': ' + str(locale.format_string("%d", count, grouping=True)))
-        print('Lock size: ' + str(self._options.lock_size))
+            print((kind.replace('-', ' ') + ': ').ljust(13) + str(locale.format_string("%d", count, grouping=True)))
+        print('Lock size: '.ljust(13) + str(self._options.lock_size))
 
     def load(self, file):
         """
@@ -284,4 +283,8 @@ class Part:
 
 
 if __name__ == '__main__':
-    combinator = Combinator()
+    try:
+        combinator = Combinator()
+    except KeyboardInterrupt as _:
+        print('Stopped by user')
+        sys.exit(2)
