@@ -3,9 +3,10 @@ import functools
 import optparse
 import os
 import sys
-from more_itertools import distinct_permutations
 
 import yaml
+from itertools import product
+from more_itertools import distinct_permutations
 
 
 class Combinator:
@@ -16,6 +17,7 @@ class Combinator:
         self._driver_pin_list = []
         self._spring_list = []
         self._combinations = {}
+        self._counts = {}
 
         self._parser = optparse.OptionParser('Usage: pin-combinator.py -f PIN_FILE [options]')
 
@@ -55,7 +57,7 @@ class Combinator:
         :return: None
         """
         print('\nCalculating combinations:')
-        print('Depending on your computer speed, number of pins in pin find and lock size, this can take a long time.')
+        print('Depending on computer speed, number of pins in pin file and lock size, \nthis can take a long time.\n')
         # Fill the list with suitable pins and springs, but only as much as lock size
         for part_list in [self._key_pin_list, self._driver_pin_list, self._spring_list]:
             self._combinations[part_list[0].get_kind()] = []
@@ -68,21 +70,29 @@ class Combinator:
                     to_combine.append(part.get_copy())
 
             part_type = str(part_list[0].get_kind())
+            self._counts[part_type] = 0
             print('Calculating ' + part_type.replace('-', ' ')[:-1] + ' combinations:', end=' ')
             # Create combination iterators
             self._combinations[part_type] = sorted(distinct_permutations(sorted(to_combine), self._options.lock_size))
             # Print how many combinations we have
-            count = 0
             for _ in self._combinations[part_type]:
-                count += 1
-            print(count)
+                self._counts[part_type] += 1
+            print(self._counts[part_type])
+
+        self._print_combinations()
 
     def _print_combinations(self) -> None:
         """
         Print the finished lock combinations on screen and save then into a file.
         :return: None
         """
-
+        lock_count = self._counts['key-pins'] * self._counts['driver-pins'] * self._counts['springs']
+        print('\nLock combinations: ' + str(lock_count))
+        locks = product(self._combinations['key-pins'], self._combinations['driver-pins'], self._combinations['springs'])
+        i = 0
+        for _ in locks:
+            i += 1
+            print(i, end='\r')
 
     def _validate(self, yml):
         """
@@ -162,6 +172,7 @@ class Combinator:
         print('\nSummary:')
         for kind, count in Part.count_dict.items():
             print(kind.replace('-', ' ') + ': ' + str(count))
+        print('Lock size: ' + str(self._options.lock_size))
 
     def load(self, file):
         """
@@ -177,7 +188,6 @@ class Combinator:
 
 @functools.total_ordering
 class Part:
-
     # Static variable counting how many of each part type we have.
     count_dict = {'key-pins': 0, 'driver-pins': 0, 'springs': 0}
 
