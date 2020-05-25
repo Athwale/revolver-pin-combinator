@@ -3,6 +3,7 @@ import functools
 import optparse
 import os
 import sys
+import locale
 
 import yaml
 from itertools import product
@@ -19,6 +20,8 @@ class Combinator:
         self._combinations = {}
         self._counts = {}
 
+        # Set large numbers to display comma separators
+        locale.setlocale(locale.LC_ALL, 'cs_CZ')
         self._parser = optparse.OptionParser('Usage: pin-combinator.py -f PIN_FILE [options]')
 
         self._parser.add_option('-f', '--file', type='string',
@@ -79,20 +82,46 @@ class Combinator:
                 self._counts[part_type] += 1
             print(self._counts[part_type])
 
-        self._print_combinations()
+        self._save_combinations()
 
-    def _print_combinations(self) -> None:
+    def _save_combinations(self) -> None:
         """
         Print the finished lock combinations on screen and save then into a file.
         :return: None
         """
         lock_count = self._counts['key-pins'] * self._counts['driver-pins'] * self._counts['springs']
-        print('\nLock combinations: ' + str(lock_count))
+        print('\nLock combinations: ' + str(locale.format_string("%d", lock_count, grouping=True)))
+        print()
         locks = product(self._combinations['key-pins'], self._combinations['driver-pins'], self._combinations['springs'])
-        i = 0
-        for _ in locks:
-            i += 1
+        i = 1
+        for lock in locks:
             print(i, end='\r')
+            print(self._get_lock_string(lock, i))
+            if i == 5:
+                break
+            i += 1
+
+    @staticmethod
+    def _get_lock_string(lock, number: int) -> str:
+        """
+        Get a string representation of a fully assembled lock
+        :param lock: Tuple of 3 combinations
+        :param number: Index of this lock.
+        :return: string lock representation
+        """
+        key_pins = lock[0]
+        driver_pins = lock[1]
+        springs = lock[2]
+        assembled = ''
+
+        print('Lock: ' + str(number))
+        for part_type in [springs, driver_pins, key_pins]:
+            assembled += str(part_type[0].get_kind().replace('-', ' ') + ': ').ljust(13)
+            for part in part_type:
+                assembled += '|' + part.get_name() + str(part.get_size())
+            assembled += '|\n'
+
+        return assembled
 
     def _validate(self, yml):
         """
@@ -171,7 +200,7 @@ class Combinator:
         print(self._spring_list)
         print('\nSummary:')
         for kind, count in Part.count_dict.items():
-            print(kind.replace('-', ' ') + ': ' + str(count))
+            print(kind.replace('-', ' ') + ': ' + str(locale.format_string("%d", count, grouping=True)))
         print('Lock size: ' + str(self._options.lock_size))
 
     def load(self, file):
