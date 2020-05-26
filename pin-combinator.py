@@ -44,10 +44,10 @@ class Combinator:
         self._options, _ = self._parser.parse_args()
         if not self._options.pin_file:
             self._parser.error('Pin file required')
+        if self._options.lock_size is None:
+            self._options.lock_size = 6
         if self._options.lock_size < self.LOCK_MIN_LIMIT or self._options.lock_size > self.LOCK_MAX_LIMIT:
             self._parser.error('Lock size must be ' + str(self.LOCK_MIN_LIMIT) + '-' + str(self.LOCK_MAX_LIMIT))
-        if not self._options.lock_size:
-            self._options.lock_size = 6
 
         try:
             self.load(os.path.realpath(self._options.pin_file))
@@ -105,15 +105,25 @@ class Combinator:
         """
         i = 1
         file_counter = 1
-        output_file = os.path.basename(self._options.pin_file).replace('.yml', '') + '_locks_' + str(
-            file_counter) + '.txt'
+        output_file = None
         for lock in self._locks:
             lock_string = self._format_lock(lock, i)
             if not self._options.quiet:
                 print(lock_string)
             else:
                 print('Saving lock: ' + str(locale.format_string("%d", i, grouping=True)), end='\r')
+                if not output_file:
+                    output_file_name = os.path.basename(self._options.pin_file).replace('.yml', '') + '_locks_' + str(
+                        file_counter) + '.txt'
+                    output_file = open(output_file_name, 'w')
 
+                # Write the lock into the file
+                output_file.write(lock_string)
+
+                if (i % 5000000) == 0:
+                    output_file.close()
+                    file_counter += 1
+                    output_file = None
             i += 1
 
     @staticmethod
@@ -129,12 +139,13 @@ class Combinator:
         springs = lock[2]
         assembled = ''
 
-        print('Lock: ' + str(locale.format_string("%d", number, grouping=True)) + ':')
+        assembled += 'Lock: ' + str(locale.format_string("%d", number, grouping=True)) + ':\n'
         for part_type in [springs, driver_pins, key_pins]:
             assembled += str(part_type[0].get_kind().replace('-', ' ') + ': ').ljust(13)
             for part in part_type:
                 assembled += '|' + part.get_name() + str(part.get_size())
             assembled += '|\n'
+        assembled += '\n'
 
         return assembled
 
