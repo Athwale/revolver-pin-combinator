@@ -8,9 +8,12 @@ from itertools import product
 
 import yaml
 from more_itertools import distinct_permutations
+from yaml.parser import ParserError
 
 
 class Combinator:
+    LOCK_MIN_LIMIT = 1
+    LOCK_MAX_LIMIT = 20
 
     def __init__(self):
         self._pin_database = None
@@ -31,15 +34,20 @@ class Combinator:
 
         self._parser.add_option('-l', '--lock', type='int',
                                 action="store", dest="lock_size",
-                                help="Select a lock size 5-7 pins (default 6)")
+                                help="Select a lock size " + str(self.LOCK_MIN_LIMIT) + "-" +
+                                     str(self.LOCK_MAX_LIMIT) + " pins (default 6)")
+
+        self._parser.add_option('-q', '--quiet', default=False,
+                                action="store_true", dest="quiet",
+                                help="Do not print lock combinations on screen, just save into file")
 
         self._options, _ = self._parser.parse_args()
         if not self._options.pin_file:
             self._parser.error('Pin file required')
+        if self._options.lock_size < self.LOCK_MIN_LIMIT or self._options.lock_size > self.LOCK_MAX_LIMIT:
+            self._parser.error('Lock size must be ' + str(self.LOCK_MIN_LIMIT) + '-' + str(self.LOCK_MAX_LIMIT))
         if not self._options.lock_size:
             self._options.lock_size = 6
-        if self._options.lock_size < 5 or self._options.lock_size > 7:
-            self._parser.error('Lock size must be 5-7')
 
         try:
             self.load(os.path.realpath(self._options.pin_file))
@@ -81,7 +89,7 @@ class Combinator:
             # Print how many combinations we have
             for _ in self._combinations[part_type]:
                 self._counts[part_type] += 1
-            print(self._counts[part_type])
+            print(str(locale.format_string("%d", self._counts[part_type], grouping=True)))
 
         self._locks = product(self._combinations['key-pins'], self._combinations['driver-pins'],
                               self._combinations['springs'])
@@ -96,8 +104,16 @@ class Combinator:
         :return: None
         """
         i = 1
+        file_counter = 1
+        output_file = os.path.basename(self._options.pin_file).replace('.yml', '') + '_locks_' + str(
+            file_counter) + '.txt'
         for lock in self._locks:
-            print(self._format_lock(lock, i))
+            lock_string = self._format_lock(lock, i)
+            if not self._options.quiet:
+                print(lock_string)
+            else:
+                print('Saving lock: ' + str(locale.format_string("%d", i, grouping=True)), end='\r')
+
             i += 1
 
     @staticmethod
@@ -209,9 +225,16 @@ class Combinator:
         :return: None
         """
         self._pin_database = file
-        with open(self._pin_database, "r") as yml:
-            data = yaml.safe_load(yml)
-            self._validate(data)
+        if not os.path.splitext(file)[1] == '.yml':
+            raise ValueError('File ' + str(os.path.basename(file)) + ' must end with .yml')
+        try:
+            with open(self._pin_database, "r") as yml:
+                data = yaml.safe_load(yml)
+                self._validate(data)
+        except FileNotFoundError as _:
+            raise ValueError('File ' + str(os.path.basename(file)) + ' does not exist')
+        except ParserError as _:
+            raise ValueError('File ' + str(os.path.basename(file)) + ' is not valid yaml')
 
 
 @functools.total_ordering
