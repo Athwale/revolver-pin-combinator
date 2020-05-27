@@ -14,6 +14,7 @@ from yaml.parser import ParserError
 class Combinator:
     LOCK_MIN_LIMIT = 1
     LOCK_MAX_LIMIT = 20
+    FILE_LIMIT = 5000000
 
     def __init__(self):
         self._pin_database = None
@@ -23,6 +24,7 @@ class Combinator:
         self._combinations = {}
         self._locks = None
         self._counts = {}
+        self._output_file = None
 
         # Set large numbers to display comma separators
         locale.setlocale(locale.LC_ALL, 'cs_CZ')
@@ -100,31 +102,34 @@ class Combinator:
 
     def _save_combinations(self) -> None:
         """
-        Print the finished lock combinations on screen and save then into a file.
+        Print the finished lock combinations on screen and save then into a set of files.
         :return: None
         """
         i = 1
         file_counter = 1
-        output_file = None
-        for lock in self._locks:
-            lock_string = self._format_lock(lock, i)
-            if not self._options.quiet:
-                print(lock_string)
-            else:
-                print('Saving lock: ' + str(locale.format_string("%d", i, grouping=True)), end='\r')
-                if not output_file:
-                    output_file_name = os.path.basename(self._options.pin_file).replace('.yml', '') + '_locks_' + str(
-                        file_counter) + '.txt'
-                    output_file = open(output_file_name, 'w')
+        try:
+            for lock in self._locks:
+                lock_string = self._format_lock(lock, i)
+                if not self._options.quiet:
+                    print(lock_string)
+                else:
+                    print('Saving lock: ' + str(locale.format_string("%d", i, grouping=True)), end='\r')
+                    if not self._output_file:
+                        output_file_name = os.path.basename(self._options.pin_file).replace('.yml', '') + '_locks_' + \
+                                           str(file_counter) + '.txt'
+                        self._output_file = open(output_file_name, 'w')
 
-                # Write the lock into the file
-                output_file.write(lock_string)
+                    # Write the lock into the file
+                    self._output_file.write(lock_string)
 
-                if (i % 5000000) == 0:
-                    output_file.close()
-                    file_counter += 1
-                    output_file = None
-            i += 1
+                    if (i % self.FILE_LIMIT) == 0:
+                        self._output_file.close()
+                        file_counter += 1
+                        self._output_file = None
+                i += 1
+        except KeyboardInterrupt as _:
+            self._output_file.close()
+            raise KeyboardInterrupt('Stopped by user')
 
     @staticmethod
     def _format_lock(lock, number: int) -> str:
@@ -319,6 +324,6 @@ class Part:
 if __name__ == '__main__':
     try:
         combinator = Combinator()
-    except KeyboardInterrupt as _:
-        print('Stopped by user')
+    except KeyboardInterrupt as s:
+        print(s)
         sys.exit(2)
