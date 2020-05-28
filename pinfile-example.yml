@@ -1,0 +1,22 @@
+key-pins:
+  # TYPE-SIZE-COUNT
+  # ST - standard, SE - serrated
+  - ST-2-4
+  - ST-3-7
+  - ST-4-15
+  - ST-5-4
+  - SE-3-2
+driver-pins:
+  # TYPE-SIZE-COUNT
+  # ST - standard, SP - spool, SE - serrated, MU - mushroom, BE - beveled
+  - ST-2-6
+  - SP-1-1
+  - SE-1-2
+  - MU-1-6
+  - BE-3-3
+springs:
+  # TYPE-STRENGTH-COUNT
+  # CO - copper, ST - steel
+  - CO-1-2
+  - CO-2-3
+  - ST-1-3
