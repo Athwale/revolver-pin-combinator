@@ -175,7 +175,9 @@ class Combinator:
             pin_list.extend(yml[category])
             for item in pin_list:
                 if pin_list.count(item) > 1:
-                    raise ValueError('Duplicate record: ' + str(item) + ' in pin file: ' + str(self._pin_database))
+                    raise ValueError('Duplicate record in ' + str(category) + ': ' + str(item) + ' in pin file: '
+                                     + str(self._pin_database))
+            pin_list.clear()
 
             # Check pin format
             for part in yml[category]:

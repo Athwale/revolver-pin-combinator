@@ -44,3 +44,16 @@ key-pins:
 driver-pins:  
 springs:  
 Each section contains a list of either pins or springs as described above. 
+
+#### Output
+The program saves lock combinations into text files in the same directory. 
+Each file contains 5 000 000 combinations and has about 600 MB. Since these
+files are text and most characters are repeated, compressing them into 
+zip, bz2... decreases the size significantly to about 15 MB per file.  
+A lock looks like this:  
+```
+Lock: 66:  
+springs:     |CO1|CO1|ST1|ST1|CO1|ST1|  
+driver pins: |MU1|MU1|MU1|MU1|MU1|MU1|  
+key pins:    |ST2|ST2|ST2|ST2|ST3|ST3|  
+```
