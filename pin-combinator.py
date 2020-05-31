@@ -28,7 +28,11 @@ class Combinator:
 
         # Set large numbers to display comma separators
         locale.setlocale(locale.LC_ALL, 'cs_CZ')
-        self._parser = optparse.OptionParser('Usage: pin-combinator.py -f PIN_FILE [options]')
+        self._parser = optparse.OptionParser('Usage: pin-combinator.py -f PIN_FILE [options]\n\n'
+                                             'pin-combinator.py -f pinfile-example.yml -l 4\n'
+                                             'pin-combinator.py -f pinfile-example.yml -l 5 -s\n\n'
+                                             'For more information visit:'
+                                             ' https://github.com/Athwale/revolver-pin-combinator')
 
         self._parser.add_option('-f', '--file', type='string',
                                 action="store", dest="pin_file",
@@ -39,9 +43,9 @@ class Combinator:
                                 help="Select a lock size " + str(self.LOCK_MIN_LIMIT) + "-" +
                                      str(self.LOCK_MAX_LIMIT) + " pins (default 6)")
 
-        self._parser.add_option('-q', '--quiet', default=False,
+        self._parser.add_option('-s', '--save', default=False,
                                 action="store_true", dest="quiet",
-                                help="Do not print lock combinations on screen, just save into file")
+                                help="Do not print lock combinations on screen, save them into files")
 
         self._options, _ = self._parser.parse_args()
         if not self._options.pin_file:
@@ -102,7 +106,7 @@ class Combinator:
 
     def _save_combinations(self) -> None:
         """
-        Print the finished lock combinations on screen and save then into a set of files.
+        Print the finished lock combinations on screen or save them into a set of files.
         :return: None
         """
         i = 1
@@ -117,10 +121,10 @@ class Combinator:
                     if not self._output_file:
                         output_file_name = os.path.basename(self._options.pin_file).replace('.yml', '') + '_locks_' + \
                                            str(file_counter) + '.txt'
-                        self._output_file = open(output_file_name, 'w')
+                        self._output_file = open(output_file_name, 'wb')
 
                     # Write the lock into the file
-                    self._output_file.write(lock_string)
+                    self._output_file.write(lock_string.encode('utf-8'))
 
                     if (i % self.FILE_LIMIT) == 0:
                         self._output_file.close()
@@ -128,8 +132,10 @@ class Combinator:
                         self._output_file = None
                 i += 1
         except KeyboardInterrupt as _:
-            self._output_file.close()
-            raise KeyboardInterrupt('Stopped by user')
+            if self._options.quiet:
+                self._output_file.close()
+            raise KeyboardInterrupt('\nStopped by user')
+        print('\nDone')
 
     @staticmethod
     def _format_lock(lock, number: int) -> str:

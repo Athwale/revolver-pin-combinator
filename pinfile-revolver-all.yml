@@ -2,20 +2,21 @@
 key-pins:
   # TYPE-SIZE-COUNT
   # ST - standard
-  - ST-2-4
-  - ST-3-7
-  - ST-4-15
-  - ST-5-4
+  - ST-1-5
+  - ST-2-6
+  - ST-3-15
+  - ST-4-4
 driver-pins:
   # TYPE-SIZE-COUNT
   # ST - standard, SP - spool, SE - serrated, MU - mushroom
-  - ST-1-6
-  - SP-1-6
-  - SE-1-6
-  - MU-1-6
+  - ST-1-30
+  - SP-1-24
+  - SE-1-24
+  - MU-1-24
 springs:
   # TYPE-STRENGTH-COUNT
   # CO - copper, ST - steel
-  - CO-1-4
-  - CO-2-4
-  - ST-1-4
+  - CO-1-20
+  - CO-2-10
+  - ST-1-20
+  - ST-2-10
