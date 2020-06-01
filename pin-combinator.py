@@ -25,6 +25,7 @@ class Combinator:
         self._locks = None
         self._counts = {}
         self._output_file = None
+        self._output_string = ''
 
         # Set large numbers to display comma separators
         locale.setlocale(locale.LC_ALL, 'cs_CZ')
@@ -69,13 +70,24 @@ class Combinator:
             print('Combinator error')
             sys.exit(2)
 
+    def _print_store(self, string: str, end='\n') -> None:
+        """
+        Print a message to standard output and store it into a variable
+        :param string: Message to print and store
+        :param end: line ending
+        :return: None
+        """
+        self._output_string += (string + '\n')
+        print(string, end=end)
+
     def _combine(self) -> None:
         """
         Create the key pin, driver pin, spring combinations and print counts.
         :return: None
         """
-        print('\nCalculating combinations:')
-        print('Depending on computer speed, number of pins in pin file and lock size, this can take a long time.\n')
+        self._print_store('\nCalculating combinations:')
+        self._print_store('Depending on computer speed, number of pins in pin file and lock size, this can take a long '
+                          'time.\n')
         # Fill the list with suitable pins and springs, but only as much as lock size
         for part_list in [self._key_pin_list, self._driver_pin_list, self._spring_list]:
             self._combinations[part_list[0].get_kind()] = []
@@ -89,19 +101,19 @@ class Combinator:
 
             part_type = str(part_list[0].get_kind())
             self._counts[part_type] = 0
-            print(('Calculating ' + part_type.replace('-', ' ')[:-1] + ' combinations:').ljust(36), end=' ')
             # Create combination iterators
             self._combinations[part_type] = sorted(distinct_permutations(sorted(to_combine), self._options.lock_size))
             # Print how many combinations we have
             for _ in self._combinations[part_type]:
                 self._counts[part_type] += 1
-            print(str(locale.format_string("%d", self._counts[part_type], grouping=True)))
+            self._print_store((part_type.replace('-', ' ')[:-1] + ' combinations:').ljust(36) +
+                              str(locale.format_string("%d", self._counts[part_type], grouping=True)))
 
         self._locks = product(self._combinations['key-pins'], self._combinations['driver-pins'],
                               self._combinations['springs'])
         lock_total = self._counts['key-pins'] * self._counts['driver-pins'] * self._counts['springs']
-        print(
-            'Total lock configurations: '.ljust(37) + str(locale.format_string("%d", lock_total, grouping=True)) + '\n')
+        self._print_store(
+            'Total lock configurations: '.ljust(36) + str(locale.format_string("%d", lock_total, grouping=True)) + '\n')
         self._save_combinations()
 
     def _save_combinations(self) -> None:
@@ -109,6 +121,7 @@ class Combinator:
         Print the finished lock combinations on screen or save them into a set of files.
         :return: None
         """
+        heading_done = False
         i = 1
         file_counter = 1
         try:
@@ -124,6 +137,9 @@ class Combinator:
                         self._output_file = open(output_file_name, 'wb')
 
                     # Write the lock into the file
+                    if file_counter == 1 and not heading_done:
+                        self._output_file.write(self._output_string.encode('utf-8'))
+                        heading_done = True
                     self._output_file.write(lock_string.encode('utf-8'))
 
                     if (i % self.FILE_LIMIT) == 0:
@@ -231,16 +247,17 @@ class Combinator:
         Nicely print the database and useful data.
         :return: None
         """
-        print('Key pins:')
-        print(self._key_pin_list)
-        print('Driver pins:')
-        print(self._driver_pin_list)
-        print('Springs:')
-        print(self._spring_list)
-        print('\nSummary:')
+        self._print_store('Key pins:')
+        self._print_store(str(self._key_pin_list))
+        self._print_store('Driver pins:')
+        self._print_store(str(self._driver_pin_list))
+        self._print_store('Springs:')
+        self._print_store(str(self._spring_list))
+        self._print_store('\nSummary:')
         for kind, count in Part.count_dict.items():
-            print((kind.replace('-', ' ') + ': ').ljust(13) + str(locale.format_string("%d", count, grouping=True)))
-        print('Lock size: '.ljust(13) + str(self._options.lock_size))
+            self._print_store((kind.replace('-', ' ') + ': ').ljust(13) + str(locale.format_string("%d", count,
+                                                                                                   grouping=True)))
+        self._print_store('Lock size: '.ljust(13) + str(self._options.lock_size))
 
     def load(self, file):
         """
