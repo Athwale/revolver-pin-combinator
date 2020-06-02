@@ -13,10 +13,19 @@ on this page.
 This tool creates all possible key pin, driver pin, spring combinations for the
 pins and springs you put into the pin file.  
 There are several pin files included with the program.  
-Originally this program was written for the revolver training lock, but it can 
+Originally this program was written for the sparrows revolver training lock, but it can 
 be used with any lock and any pin or spring type since pin naming in the pin file
 is completely up to the user.  
 See the included yml pin databases for more examples.
+
+#### Included files
+* **pin-combinator.py** - The program for calculating combinations.
+* **pinfile-general-example.yml** - An example file showing how a pin database may look like.  
+* **pinfile-revolver-all.yml** - Database of pins that came with my revolver lock.  
+* **pinfile-revolver-standard.yml** - Modified database that creates all standard only 
+pin combinations for my lock.  
+* **Revolver-standard-only-locks.txt** - Example of standard only locks.  
+* **pinfile-revolver-all_locks_1.txt.bz2** - Example of first 5 000 000 combinations.
 
 #### Pin description
 A pin is stored in the pin file like this:  
@@ -24,9 +33,9 @@ Pick two letters as the name, followed by the pin size and how many of such
 pins you have.    
 
 This is a description of four standard pins of size 2:  
-ST-2-4  
+**ST-2-4**  
 This is a description of six spool pins of size 1:  
-SP-1-6
+**SP-1-6**
 
 #### Spring description
 A spring is stored in the pin file like this:
@@ -34,26 +43,51 @@ Pick two letters as the name, followed by the spring strength and how many of su
 springs you have.  
 
 This is a description of a four copper springs of strength 1:  
-CO-1-4  
+**CO-1-4**  
 This is a description of a five steel springs of strength 2:  
-ST-2-5
+**ST-2-5**
 
 #### Pin file structure
 The pin file is divided into 3 sections:  
-key-pins:  
-driver-pins:  
-springs:  
+* **key-pins:**  
+* **driver-pins:**  
+* **springs:**
+  
 Each section contains a list of either pins or springs as described above. 
 
 #### Output
 The program saves lock combinations into text files in the same directory. 
-Each file contains 5 000 000 combinations and has about 600 MB. Since these
-files are text and most characters are repeated, compressing them into 
-zip, bz2... decreases the size significantly to about 15 MB per file.  
-A lock looks like this:  
+Each file contains 5 000 000 combinations and has about **600 MB**. Since these
+files are text only and most characters are repeated, compressing them into 
+zip, bz2... decreases their size significantly to about **15 MB** per file.  
+A finished lock looks like this:  
 ```
 Lock: 66:  
-springs:     |CO1|CO1|ST1|ST1|CO1|ST1|  
-driver pins: |MU1|MU1|MU1|MU1|MU1|MU1|  
-key pins:    |ST2|ST2|ST2|ST2|ST3|ST3|  
+springs:     |CO1|CO1|ST1|ST2|CO1|ST1|  
+driver pins: |MU1|SP1|MU1|SE1|MU1|ST1|  
+key pins:    |ST1|ST2|ST5|ST2|ST3|ST3|  
 ```
+
+### Usage
+Create a pin database or use one of the examples from here.  
+Run the pin-combinator.py program like this:  
+```
+Usage: pin-combinator.py -f PIN_FILE [options]
+
+pin-combinator.py -f pinfile-example.yml -l 4
+pin-combinator.py -f pinfile-example.yml -l 5 -s
+
+For more information visit: https://github.com/Athwale/revolver-pin-combinator
+
+Options:
+  -h, --help            show this help message and exit
+  -f PIN_FILE, --file=PIN_FILE
+                        Select a pin database to use
+  -l LOCK_SIZE, --lock=LOCK_SIZE
+                        Select a lock size 1-20 pins (default 6)
+  -s, --save            Do not print lock combinations on screen, save them
+                        into files
+```
+Depending on how many different pin/spring types you have in your pin file, the 
+selected lock size and the speed of your computer, the calculation may take several 
+hours and a lot of disk space.
