@@ -123,8 +123,6 @@ class Combinator:
         Print the finished lock combinations on screen or save them into a set of files.
         :return: None
         """
-        # TODO Require confirmation before start
-        # TODO estimate approx size on disk
         heading_done = False
         i = 1
         file_counter = 1

@@ -58,8 +58,8 @@ Each section contains a list of either pins or springs as described above.
 #### Output
 The program saves lock combinations into bz2 compressed zip files in the same directory. 
 Zip files are created from **600 MB** source text files. Each contains 5 000 000 lock 
-combinations. At least 1 GB MB must be available on disk. The zips are about 12 MB each. 
-A finished lock looks like this:  
+combinations. At least 1 GB MB must be available on disk. The zips are up to **12 MB** 
+each. A finished lock looks like this:  
 ```
 Lock: 66:  
 springs:     |CO1|CO1|ST1|ST2|CO1|ST1|  
@@ -89,4 +89,4 @@ Options:
 ```
 Depending on how many different pin/spring types you have in your pin file, the 
 selected lock size and the speed of your computer, the calculation may take several 
-hours and a lot of disk space.
+hours and a several GB of disk space.
