@@ -16,7 +16,6 @@ class Combinator:
     LOCK_MIN_LIMIT = 1
     LOCK_MAX_LIMIT = 20
     FILE_LIMIT = 5000000
-    ZIP_SIZE = 24000000
 
     def __init__(self):
         self._pin_database = None
@@ -116,7 +115,6 @@ class Combinator:
         lock_total = self._counts['key-pins'] * self._counts['driver-pins'] * self._counts['springs']
         self._print_store(
             'Total lock configurations: '.ljust(36) + str(locale.format_string("%d", lock_total, grouping=True)) + '\n')
-        disk_estimate = lock_total / self.FILE_LIMIT * self.ZIP_SIZE
 
         self._save_combinations()
 
@@ -150,23 +148,30 @@ class Combinator:
                     self._output_file.write(lock_string.encode('utf-8'))
 
                     if (i % self.FILE_LIMIT) == 0:
-                        self._output_file.close()
-
-                        # Zip the file
-                        z = zipfile.ZipFile(output_file_name.replace('.txt', '.zip'), 'w', zipfile.ZIP_DEFLATED)
-                        z.write(output_file_name)
-                        z.close()
-
-                        # Remove source file
-                        os.remove(output_file_name)
+                        self._compress(output_file_name)
                         file_counter += 1
-                        self._output_file = None
                 i += 1
+            # Compress anything that has less than 5 000 000 locks
+            self._compress(output_file_name)
         except KeyboardInterrupt as _:
             if self._options.quiet:
                 self._output_file.close()
             raise KeyboardInterrupt('\nStopped by user')
         print('\nDone')
+
+    def _compress(self, file_name: str) -> None:
+        """
+        Compress a lock file into bz2 zip.
+        :param file_name: Name of the file to compress.
+        :return: None
+        """
+        self._output_file.close()
+        z = zipfile.ZipFile(file_name.replace('.txt', '.zip'), 'w', zipfile.ZIP_BZIP2)
+        z.write(file_name)
+        z.close()
+        # Remove source file
+        os.remove(file_name)
+        self._output_file = None
 
     @staticmethod
     def _format_lock(lock, number: int) -> str:
