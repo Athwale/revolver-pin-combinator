@@ -4,6 +4,7 @@ import locale
 import optparse
 import os
 import sys
+import zipfile
 from itertools import product
 
 import yaml
@@ -15,6 +16,7 @@ class Combinator:
     LOCK_MIN_LIMIT = 1
     LOCK_MAX_LIMIT = 20
     FILE_LIMIT = 5000000
+    ZIP_SIZE = 24000000
 
     def __init__(self):
         self._pin_database = None
@@ -114,6 +116,8 @@ class Combinator:
         lock_total = self._counts['key-pins'] * self._counts['driver-pins'] * self._counts['springs']
         self._print_store(
             'Total lock configurations: '.ljust(36) + str(locale.format_string("%d", lock_total, grouping=True)) + '\n')
+        disk_estimate = lock_total / self.FILE_LIMIT * self.ZIP_SIZE
+
         self._save_combinations()
 
     def _save_combinations(self) -> None:
@@ -121,9 +125,12 @@ class Combinator:
         Print the finished lock combinations on screen or save them into a set of files.
         :return: None
         """
+        # TODO Require confirmation before start
+        # TODO estimate approx size on disk
         heading_done = False
         i = 1
         file_counter = 1
+        output_file_name = None
         try:
             for lock in self._locks:
                 lock_string = self._format_lock(lock, i)
@@ -144,6 +151,14 @@ class Combinator:
 
                     if (i % self.FILE_LIMIT) == 0:
                         self._output_file.close()
+
+                        # Zip the file
+                        z = zipfile.ZipFile(output_file_name.replace('.txt', '.zip'), 'w', zipfile.ZIP_DEFLATED)
+                        z.write(output_file_name)
+                        z.close()
+
+                        # Remove source file
+                        os.remove(output_file_name)
                         file_counter += 1
                         self._output_file = None
                 i += 1
