@@ -25,7 +25,6 @@ See the included yml pin databases for more examples.
 * **pinfile-revolver-standard.yml** - Modified database that creates all standard only 
 pin combinations for my lock.  
 * **Revolver-standard-only-locks.txt** - Example of standard only locks.  
-* **pinfile-revolver-all_locks_1.txt.bz2** - Example of first 5 000 000 combinations.
 
 #### Pin description
 A pin is stored in the pin file like this:  
