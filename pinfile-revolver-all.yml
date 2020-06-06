@@ -1,15 +1,15 @@
-# This file contains all pins and springs that came with my sparrows revolver lock.
+# This file contains all pins and springs that came with my sparrows revolver lock + reload kit.
 key-pins:
   # TYPE-SIZE-COUNT
   # ST - standard
-  - ST-1-5
-  - ST-2-6
-  - ST-3-15
-  - ST-4-4
+  - ST-1-7
+  - ST-2-12
+  - ST-3-31
+  - ST-4-7
 driver-pins:
   # TYPE-SIZE-COUNT
   # ST - standard, SP - spool, SE - serrated, MU - mushroom
-  - ST-1-30
+  - ST-1-31
   - SP-1-24
   - SE-1-24
   - MU-1-24
@@ -17,6 +17,6 @@ springs:
   # TYPE-STRENGTH-COUNT
   # CO - copper, ST - steel
   - CO-1-20
-  - CO-2-10
+  - CO-2-11
   - ST-1-20
   - ST-2-10
