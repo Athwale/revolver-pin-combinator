@@ -1,0 +1,2050 @@
+Since all springs and driver pins are the same in standard only locks, only the important part is here.
+
+Lock: 1: key pins:    |ST1|ST1|ST1|ST1|ST1|
+
+Lock: 2: key pins:    |ST1|ST1|ST1|ST1|ST2|
+
+Lock: 3: key pins:    |ST1|ST1|ST1|ST1|ST3|
+
+Lock: 4: key pins:    |ST1|ST1|ST1|ST1|ST4|
+
+Lock: 5: key pins:    |ST1|ST1|ST1|ST2|ST1|
+
+Lock: 6: key pins:    |ST1|ST1|ST1|ST2|ST2|
+
+Lock: 7: key pins:    |ST1|ST1|ST1|ST2|ST3|
+
+Lock: 8: key pins:    |ST1|ST1|ST1|ST2|ST4|
+
+Lock: 9: key pins:    |ST1|ST1|ST1|ST3|ST1|
+
+Lock: 10: key pins:    |ST1|ST1|ST1|ST3|ST2|
+
+Lock: 11: key pins:    |ST1|ST1|ST1|ST3|ST3|
+
+Lock: 12: key pins:    |ST1|ST1|ST1|ST3|ST4|
+
+Lock: 13: key pins:    |ST1|ST1|ST1|ST4|ST1|
+
+Lock: 14: key pins:    |ST1|ST1|ST1|ST4|ST2|
+
+Lock: 15: key pins:    |ST1|ST1|ST1|ST4|ST3|
+
+Lock: 16: key pins:    |ST1|ST1|ST1|ST4|ST4|
+
+Lock: 17: key pins:    |ST1|ST1|ST2|ST1|ST1|
+
+Lock: 18: key pins:    |ST1|ST1|ST2|ST1|ST2|
+
+Lock: 19: key pins:    |ST1|ST1|ST2|ST1|ST3|
+
+Lock: 20: key pins:    |ST1|ST1|ST2|ST1|ST4|
+
+Lock: 21: key pins:    |ST1|ST1|ST2|ST2|ST1|
+
+Lock: 22: key pins:    |ST1|ST1|ST2|ST2|ST2|
+
+Lock: 23: key pins:    |ST1|ST1|ST2|ST2|ST3|
+
+Lock: 24: key pins:    |ST1|ST1|ST2|ST2|ST4|
+
+Lock: 25: key pins:    |ST1|ST1|ST2|ST3|ST1|
+
+Lock: 26: key pins:    |ST1|ST1|ST2|ST3|ST2|
+
+Lock: 27: key pins:    |ST1|ST1|ST2|ST3|ST3|
+
+Lock: 28: key pins:    |ST1|ST1|ST2|ST3|ST4|
+
+Lock: 29: key pins:    |ST1|ST1|ST2|ST4|ST1|
+
+Lock: 30: key pins:    |ST1|ST1|ST2|ST4|ST2|
+
+Lock: 31: key pins:    |ST1|ST1|ST2|ST4|ST3|
+
+Lock: 32: key pins:    |ST1|ST1|ST2|ST4|ST4|
+
+Lock: 33: key pins:    |ST1|ST1|ST3|ST1|ST1|
+
+Lock: 34: key pins:    |ST1|ST1|ST3|ST1|ST2|
+
+Lock: 35: key pins:    |ST1|ST1|ST3|ST1|ST3|
+
+Lock: 36: key pins:    |ST1|ST1|ST3|ST1|ST4|
+
+Lock: 37: key pins:    |ST1|ST1|ST3|ST2|ST1|
+
+Lock: 38: key pins:    |ST1|ST1|ST3|ST2|ST2|
+
+Lock: 39: key pins:    |ST1|ST1|ST3|ST2|ST3|
+
+Lock: 40: key pins:    |ST1|ST1|ST3|ST2|ST4|
+
+Lock: 41: key pins:    |ST1|ST1|ST3|ST3|ST1|
+
+Lock: 42: key pins:    |ST1|ST1|ST3|ST3|ST2|
+
+Lock: 43: key pins:    |ST1|ST1|ST3|ST3|ST3|
+
+Lock: 44: key pins:    |ST1|ST1|ST3|ST3|ST4|
+
+Lock: 45: key pins:    |ST1|ST1|ST3|ST4|ST1|
+
+Lock: 46: key pins:    |ST1|ST1|ST3|ST4|ST2|
+
+Lock: 47: key pins:    |ST1|ST1|ST3|ST4|ST3|
+
+Lock: 48: key pins:    |ST1|ST1|ST3|ST4|ST4|
+
+Lock: 49: key pins:    |ST1|ST1|ST4|ST1|ST1|
+
+Lock: 50: key pins:    |ST1|ST1|ST4|ST1|ST2|
+
+Lock: 51: key pins:    |ST1|ST1|ST4|ST1|ST3|
+
+Lock: 52: key pins:    |ST1|ST1|ST4|ST1|ST4|
+
+Lock: 53: key pins:    |ST1|ST1|ST4|ST2|ST1|
+
+Lock: 54: key pins:    |ST1|ST1|ST4|ST2|ST2|
+
+Lock: 55: key pins:    |ST1|ST1|ST4|ST2|ST3|
+
+Lock: 56: key pins:    |ST1|ST1|ST4|ST2|ST4|
+
+Lock: 57: key pins:    |ST1|ST1|ST4|ST3|ST1|
+
+Lock: 58: key pins:    |ST1|ST1|ST4|ST3|ST2|
+
+Lock: 59: key pins:    |ST1|ST1|ST4|ST3|ST3|
+
+Lock: 60: key pins:    |ST1|ST1|ST4|ST3|ST4|
+
+Lock: 61: key pins:    |ST1|ST1|ST4|ST4|ST1|
+
+Lock: 62: key pins:    |ST1|ST1|ST4|ST4|ST2|
+
+Lock: 63: key pins:    |ST1|ST1|ST4|ST4|ST3|
+
+Lock: 64: key pins:    |ST1|ST1|ST4|ST4|ST4|
+
+Lock: 65: key pins:    |ST1|ST2|ST1|ST1|ST1|
+
+Lock: 66: key pins:    |ST1|ST2|ST1|ST1|ST2|
+
+Lock: 67: key pins:    |ST1|ST2|ST1|ST1|ST3|
+
+Lock: 68: key pins:    |ST1|ST2|ST1|ST1|ST4|
+
+Lock: 69: key pins:    |ST1|ST2|ST1|ST2|ST1|
+
+Lock: 70: key pins:    |ST1|ST2|ST1|ST2|ST2|
+
+Lock: 71: key pins:    |ST1|ST2|ST1|ST2|ST3|
+
+Lock: 72: key pins:    |ST1|ST2|ST1|ST2|ST4|
+
+Lock: 73: key pins:    |ST1|ST2|ST1|ST3|ST1|
+
+Lock: 74: key pins:    |ST1|ST2|ST1|ST3|ST2|
+
+Lock: 75: key pins:    |ST1|ST2|ST1|ST3|ST3|
+
+Lock: 76: key pins:    |ST1|ST2|ST1|ST3|ST4|
+
+Lock: 77: key pins:    |ST1|ST2|ST1|ST4|ST1|
+
+Lock: 78: key pins:    |ST1|ST2|ST1|ST4|ST2|
+
+Lock: 79: key pins:    |ST1|ST2|ST1|ST4|ST3|
+
+Lock: 80: key pins:    |ST1|ST2|ST1|ST4|ST4|
+
+Lock: 81: key pins:    |ST1|ST2|ST2|ST1|ST1|
+
+Lock: 82: key pins:    |ST1|ST2|ST2|ST1|ST2|
+
+Lock: 83: key pins:    |ST1|ST2|ST2|ST1|ST3|
+
+Lock: 84: key pins:    |ST1|ST2|ST2|ST1|ST4|
+
+Lock: 85: key pins:    |ST1|ST2|ST2|ST2|ST1|
+
+Lock: 86: key pins:    |ST1|ST2|ST2|ST2|ST2|
+
+Lock: 87: key pins:    |ST1|ST2|ST2|ST2|ST3|
+
+Lock: 88: key pins:    |ST1|ST2|ST2|ST2|ST4|
+
+Lock: 89: key pins:    |ST1|ST2|ST2|ST3|ST1|
+
+Lock: 90: key pins:    |ST1|ST2|ST2|ST3|ST2|
+
+Lock: 91: key pins:    |ST1|ST2|ST2|ST3|ST3|
+
+Lock: 92: key pins:    |ST1|ST2|ST2|ST3|ST4|
+
+Lock: 93: key pins:    |ST1|ST2|ST2|ST4|ST1|
+
+Lock: 94: key pins:    |ST1|ST2|ST2|ST4|ST2|
+
+Lock: 95: key pins:    |ST1|ST2|ST2|ST4|ST3|
+
+Lock: 96: key pins:    |ST1|ST2|ST2|ST4|ST4|
+
+Lock: 97: key pins:    |ST1|ST2|ST3|ST1|ST1|
+
+Lock: 98: key pins:    |ST1|ST2|ST3|ST1|ST2|
+
+Lock: 99: key pins:    |ST1|ST2|ST3|ST1|ST3|
+
+Lock: 100: key pins:    |ST1|ST2|ST3|ST1|ST4|
+
+Lock: 101: key pins:    |ST1|ST2|ST3|ST2|ST1|
+
+Lock: 102: key pins:    |ST1|ST2|ST3|ST2|ST2|
+
+Lock: 103: key pins:    |ST1|ST2|ST3|ST2|ST3|
+
+Lock: 104: key pins:    |ST1|ST2|ST3|ST2|ST4|
+
+Lock: 105: key pins:    |ST1|ST2|ST3|ST3|ST1|
+
+Lock: 106: key pins:    |ST1|ST2|ST3|ST3|ST2|
+
+Lock: 107: key pins:    |ST1|ST2|ST3|ST3|ST3|
+
+Lock: 108: key pins:    |ST1|ST2|ST3|ST3|ST4|
+
+Lock: 109: key pins:    |ST1|ST2|ST3|ST4|ST1|
+
+Lock: 110: key pins:    |ST1|ST2|ST3|ST4|ST2|
+
+Lock: 111: key pins:    |ST1|ST2|ST3|ST4|ST3|
+
+Lock: 112: key pins:    |ST1|ST2|ST3|ST4|ST4|
+
+Lock: 113: key pins:    |ST1|ST2|ST4|ST1|ST1|
+
+Lock: 114: key pins:    |ST1|ST2|ST4|ST1|ST2|
+
+Lock: 115: key pins:    |ST1|ST2|ST4|ST1|ST3|
+
+Lock: 116: key pins:    |ST1|ST2|ST4|ST1|ST4|
+
+Lock: 117: key pins:    |ST1|ST2|ST4|ST2|ST1|
+
+Lock: 118: key pins:    |ST1|ST2|ST4|ST2|ST2|
+
+Lock: 119: key pins:    |ST1|ST2|ST4|ST2|ST3|
+
+Lock: 120: key pins:    |ST1|ST2|ST4|ST2|ST4|
+
+Lock: 121: key pins:    |ST1|ST2|ST4|ST3|ST1|
+
+Lock: 122: key pins:    |ST1|ST2|ST4|ST3|ST2|
+
+Lock: 123: key pins:    |ST1|ST2|ST4|ST3|ST3|
+
+Lock: 124: key pins:    |ST1|ST2|ST4|ST3|ST4|
+
+Lock: 125: key pins:    |ST1|ST2|ST4|ST4|ST1|
+
+Lock: 126: key pins:    |ST1|ST2|ST4|ST4|ST2|
+
+Lock: 127: key pins:    |ST1|ST2|ST4|ST4|ST3|
+
+Lock: 128: key pins:    |ST1|ST2|ST4|ST4|ST4|
+
+Lock: 129: key pins:    |ST1|ST3|ST1|ST1|ST1|
+
+Lock: 130: key pins:    |ST1|ST3|ST1|ST1|ST2|
+
+Lock: 131: key pins:    |ST1|ST3|ST1|ST1|ST3|
+
+Lock: 132: key pins:    |ST1|ST3|ST1|ST1|ST4|
+
+Lock: 133: key pins:    |ST1|ST3|ST1|ST2|ST1|
+
+Lock: 134: key pins:    |ST1|ST3|ST1|ST2|ST2|
+
+Lock: 135: key pins:    |ST1|ST3|ST1|ST2|ST3|
+
+Lock: 136: key pins:    |ST1|ST3|ST1|ST2|ST4|
+
+Lock: 137: key pins:    |ST1|ST3|ST1|ST3|ST1|
+
+Lock: 138: key pins:    |ST1|ST3|ST1|ST3|ST2|
+
+Lock: 139: key pins:    |ST1|ST3|ST1|ST3|ST3|
+
+Lock: 140: key pins:    |ST1|ST3|ST1|ST3|ST4|
+
+Lock: 141: key pins:    |ST1|ST3|ST1|ST4|ST1|
+
+Lock: 142: key pins:    |ST1|ST3|ST1|ST4|ST2|
+
+Lock: 143: key pins:    |ST1|ST3|ST1|ST4|ST3|
+
+Lock: 144: key pins:    |ST1|ST3|ST1|ST4|ST4|
+
+Lock: 145: key pins:    |ST1|ST3|ST2|ST1|ST1|
+
+Lock: 146: key pins:    |ST1|ST3|ST2|ST1|ST2|
+
+Lock: 147: key pins:    |ST1|ST3|ST2|ST1|ST3|
+
+Lock: 148: key pins:    |ST1|ST3|ST2|ST1|ST4|
+
+Lock: 149: key pins:    |ST1|ST3|ST2|ST2|ST1|
+
+Lock: 150: key pins:    |ST1|ST3|ST2|ST2|ST2|
+
+Lock: 151: key pins:    |ST1|ST3|ST2|ST2|ST3|
+
+Lock: 152: key pins:    |ST1|ST3|ST2|ST2|ST4|
+
+Lock: 153: key pins:    |ST1|ST3|ST2|ST3|ST1|
+
+Lock: 154: key pins:    |ST1|ST3|ST2|ST3|ST2|
+
+Lock: 155: key pins:    |ST1|ST3|ST2|ST3|ST3|
+
+Lock: 156: key pins:    |ST1|ST3|ST2|ST3|ST4|
+
+Lock: 157: key pins:    |ST1|ST3|ST2|ST4|ST1|
+
+Lock: 158: key pins:    |ST1|ST3|ST2|ST4|ST2|
+
+Lock: 159: key pins:    |ST1|ST3|ST2|ST4|ST3|
+
+Lock: 160: key pins:    |ST1|ST3|ST2|ST4|ST4|
+
+Lock: 161: key pins:    |ST1|ST3|ST3|ST1|ST1|
+
+Lock: 162: key pins:    |ST1|ST3|ST3|ST1|ST2|
+
+Lock: 163: key pins:    |ST1|ST3|ST3|ST1|ST3|
+
+Lock: 164: key pins:    |ST1|ST3|ST3|ST1|ST4|
+
+Lock: 165: key pins:    |ST1|ST3|ST3|ST2|ST1|
+
+Lock: 166: key pins:    |ST1|ST3|ST3|ST2|ST2|
+
+Lock: 167: key pins:    |ST1|ST3|ST3|ST2|ST3|
+
+Lock: 168: key pins:    |ST1|ST3|ST3|ST2|ST4|
+
+Lock: 169: key pins:    |ST1|ST3|ST3|ST3|ST1|
+
+Lock: 170: key pins:    |ST1|ST3|ST3|ST3|ST2|
+
+Lock: 171: key pins:    |ST1|ST3|ST3|ST3|ST3|
+
+Lock: 172: key pins:    |ST1|ST3|ST3|ST3|ST4|
+
+Lock: 173: key pins:    |ST1|ST3|ST3|ST4|ST1|
+
+Lock: 174: key pins:    |ST1|ST3|ST3|ST4|ST2|
+
+Lock: 175: key pins:    |ST1|ST3|ST3|ST4|ST3|
+
+Lock: 176: key pins:    |ST1|ST3|ST3|ST4|ST4|
+
+Lock: 177: key pins:    |ST1|ST3|ST4|ST1|ST1|
+
+Lock: 178: key pins:    |ST1|ST3|ST4|ST1|ST2|
+
+Lock: 179: key pins:    |ST1|ST3|ST4|ST1|ST3|
+
+Lock: 180: key pins:    |ST1|ST3|ST4|ST1|ST4|
+
+Lock: 181: key pins:    |ST1|ST3|ST4|ST2|ST1|
+
+Lock: 182: key pins:    |ST1|ST3|ST4|ST2|ST2|
+
+Lock: 183: key pins:    |ST1|ST3|ST4|ST2|ST3|
+
+Lock: 184: key pins:    |ST1|ST3|ST4|ST2|ST4|
+
+Lock: 185: key pins:    |ST1|ST3|ST4|ST3|ST1|
+
+Lock: 186: key pins:    |ST1|ST3|ST4|ST3|ST2|
+
+Lock: 187: key pins:    |ST1|ST3|ST4|ST3|ST3|
+
+Lock: 188: key pins:    |ST1|ST3|ST4|ST3|ST4|
+
+Lock: 189: key pins:    |ST1|ST3|ST4|ST4|ST1|
+
+Lock: 190: key pins:    |ST1|ST3|ST4|ST4|ST2|
+
+Lock: 191: key pins:    |ST1|ST3|ST4|ST4|ST3|
+
+Lock: 192: key pins:    |ST1|ST3|ST4|ST4|ST4|
+
+Lock: 193: key pins:    |ST1|ST4|ST1|ST1|ST1|
+
+Lock: 194: key pins:    |ST1|ST4|ST1|ST1|ST2|
+
+Lock: 195: key pins:    |ST1|ST4|ST1|ST1|ST3|
+
+Lock: 196: key pins:    |ST1|ST4|ST1|ST1|ST4|
+
+Lock: 197: key pins:    |ST1|ST4|ST1|ST2|ST1|
+
+Lock: 198: key pins:    |ST1|ST4|ST1|ST2|ST2|
+
+Lock: 199: key pins:    |ST1|ST4|ST1|ST2|ST3|
+
+Lock: 200: key pins:    |ST1|ST4|ST1|ST2|ST4|
+
+Lock: 201: key pins:    |ST1|ST4|ST1|ST3|ST1|
+
+Lock: 202: key pins:    |ST1|ST4|ST1|ST3|ST2|
+
+Lock: 203: key pins:    |ST1|ST4|ST1|ST3|ST3|
+
+Lock: 204: key pins:    |ST1|ST4|ST1|ST3|ST4|
+
+Lock: 205: key pins:    |ST1|ST4|ST1|ST4|ST1|
+
+Lock: 206: key pins:    |ST1|ST4|ST1|ST4|ST2|
+
+Lock: 207: key pins:    |ST1|ST4|ST1|ST4|ST3|
+
+Lock: 208: key pins:    |ST1|ST4|ST1|ST4|ST4|
+
+Lock: 209: key pins:    |ST1|ST4|ST2|ST1|ST1|
+
+Lock: 210: key pins:    |ST1|ST4|ST2|ST1|ST2|
+
+Lock: 211: key pins:    |ST1|ST4|ST2|ST1|ST3|
+
+Lock: 212: key pins:    |ST1|ST4|ST2|ST1|ST4|
+
+Lock: 213: key pins:    |ST1|ST4|ST2|ST2|ST1|
+
+Lock: 214: key pins:    |ST1|ST4|ST2|ST2|ST2|
+
+Lock: 215: key pins:    |ST1|ST4|ST2|ST2|ST3|
+
+Lock: 216: key pins:    |ST1|ST4|ST2|ST2|ST4|
+
+Lock: 217: key pins:    |ST1|ST4|ST2|ST3|ST1|
+
+Lock: 218: key pins:    |ST1|ST4|ST2|ST3|ST2|
+
+Lock: 219: key pins:    |ST1|ST4|ST2|ST3|ST3|
+
+Lock: 220: key pins:    |ST1|ST4|ST2|ST3|ST4|
+
+Lock: 221: key pins:    |ST1|ST4|ST2|ST4|ST1|
+
+Lock: 222: key pins:    |ST1|ST4|ST2|ST4|ST2|
+
+Lock: 223: key pins:    |ST1|ST4|ST2|ST4|ST3|
+
+Lock: 224: key pins:    |ST1|ST4|ST2|ST4|ST4|
+
+Lock: 225: key pins:    |ST1|ST4|ST3|ST1|ST1|
+
+Lock: 226: key pins:    |ST1|ST4|ST3|ST1|ST2|
+
+Lock: 227: key pins:    |ST1|ST4|ST3|ST1|ST3|
+
+Lock: 228: key pins:    |ST1|ST4|ST3|ST1|ST4|
+
+Lock: 229: key pins:    |ST1|ST4|ST3|ST2|ST1|
+
+Lock: 230: key pins:    |ST1|ST4|ST3|ST2|ST2|
+
+Lock: 231: key pins:    |ST1|ST4|ST3|ST2|ST3|
+
+Lock: 232: key pins:    |ST1|ST4|ST3|ST2|ST4|
+
+Lock: 233: key pins:    |ST1|ST4|ST3|ST3|ST1|
+
+Lock: 234: key pins:    |ST1|ST4|ST3|ST3|ST2|
+
+Lock: 235: key pins:    |ST1|ST4|ST3|ST3|ST3|
+
+Lock: 236: key pins:    |ST1|ST4|ST3|ST3|ST4|
+
+Lock: 237: key pins:    |ST1|ST4|ST3|ST4|ST1|
+
+Lock: 238: key pins:    |ST1|ST4|ST3|ST4|ST2|
+
+Lock: 239: key pins:    |ST1|ST4|ST3|ST4|ST3|
+
+Lock: 240: key pins:    |ST1|ST4|ST3|ST4|ST4|
+
+Lock: 241: key pins:    |ST1|ST4|ST4|ST1|ST1|
+
+Lock: 242: key pins:    |ST1|ST4|ST4|ST1|ST2|
+
+Lock: 243: key pins:    |ST1|ST4|ST4|ST1|ST3|
+
+Lock: 244: key pins:    |ST1|ST4|ST4|ST1|ST4|
+
+Lock: 245: key pins:    |ST1|ST4|ST4|ST2|ST1|
+
+Lock: 246: key pins:    |ST1|ST4|ST4|ST2|ST2|
+
+Lock: 247: key pins:    |ST1|ST4|ST4|ST2|ST3|
+
+Lock: 248: key pins:    |ST1|ST4|ST4|ST2|ST4|
+
+Lock: 249: key pins:    |ST1|ST4|ST4|ST3|ST1|
+
+Lock: 250: key pins:    |ST1|ST4|ST4|ST3|ST2|
+
+Lock: 251: key pins:    |ST1|ST4|ST4|ST3|ST3|
+
+Lock: 252: key pins:    |ST1|ST4|ST4|ST3|ST4|
+
+Lock: 253: key pins:    |ST1|ST4|ST4|ST4|ST1|
+
+Lock: 254: key pins:    |ST1|ST4|ST4|ST4|ST2|
+
+Lock: 255: key pins:    |ST1|ST4|ST4|ST4|ST3|
+
+Lock: 256: key pins:    |ST1|ST4|ST4|ST4|ST4|
+
+Lock: 257: key pins:    |ST2|ST1|ST1|ST1|ST1|
+
+Lock: 258: key pins:    |ST2|ST1|ST1|ST1|ST2|
+
+Lock: 259: key pins:    |ST2|ST1|ST1|ST1|ST3|
+
+Lock: 260: key pins:    |ST2|ST1|ST1|ST1|ST4|
+
+Lock: 261: key pins:    |ST2|ST1|ST1|ST2|ST1|
+
+Lock: 262: key pins:    |ST2|ST1|ST1|ST2|ST2|
+
+Lock: 263: key pins:    |ST2|ST1|ST1|ST2|ST3|
+
+Lock: 264: key pins:    |ST2|ST1|ST1|ST2|ST4|
+
+Lock: 265: key pins:    |ST2|ST1|ST1|ST3|ST1|
+
+Lock: 266: key pins:    |ST2|ST1|ST1|ST3|ST2|
+
+Lock: 267: key pins:    |ST2|ST1|ST1|ST3|ST3|
+
+Lock: 268: key pins:    |ST2|ST1|ST1|ST3|ST4|
+
+Lock: 269: key pins:    |ST2|ST1|ST1|ST4|ST1|
+
+Lock: 270: key pins:    |ST2|ST1|ST1|ST4|ST2|
+
+Lock: 271: key pins:    |ST2|ST1|ST1|ST4|ST3|
+
+Lock: 272: key pins:    |ST2|ST1|ST1|ST4|ST4|
+
+Lock: 273: key pins:    |ST2|ST1|ST2|ST1|ST1|
+
+Lock: 274: key pins:    |ST2|ST1|ST2|ST1|ST2|
+
+Lock: 275: key pins:    |ST2|ST1|ST2|ST1|ST3|
+
+Lock: 276: key pins:    |ST2|ST1|ST2|ST1|ST4|
+
+Lock: 277: key pins:    |ST2|ST1|ST2|ST2|ST1|
+
+Lock: 278: key pins:    |ST2|ST1|ST2|ST2|ST2|
+
+Lock: 279: key pins:    |ST2|ST1|ST2|ST2|ST3|
+
+Lock: 280: key pins:    |ST2|ST1|ST2|ST2|ST4|
+
+Lock: 281: key pins:    |ST2|ST1|ST2|ST3|ST1|
+
+Lock: 282: key pins:    |ST2|ST1|ST2|ST3|ST2|
+
+Lock: 283: key pins:    |ST2|ST1|ST2|ST3|ST3|
+
+Lock: 284: key pins:    |ST2|ST1|ST2|ST3|ST4|
+
+Lock: 285: key pins:    |ST2|ST1|ST2|ST4|ST1|
+
+Lock: 286: key pins:    |ST2|ST1|ST2|ST4|ST2|
+
+Lock: 287: key pins:    |ST2|ST1|ST2|ST4|ST3|
+
+Lock: 288: key pins:    |ST2|ST1|ST2|ST4|ST4|
+
+Lock: 289: key pins:    |ST2|ST1|ST3|ST1|ST1|
+
+Lock: 290: key pins:    |ST2|ST1|ST3|ST1|ST2|
+
+Lock: 291: key pins:    |ST2|ST1|ST3|ST1|ST3|
+
+Lock: 292: key pins:    |ST2|ST1|ST3|ST1|ST4|
+
+Lock: 293: key pins:    |ST2|ST1|ST3|ST2|ST1|
+
+Lock: 294: key pins:    |ST2|ST1|ST3|ST2|ST2|
+
+Lock: 295: key pins:    |ST2|ST1|ST3|ST2|ST3|
+
+Lock: 296: key pins:    |ST2|ST1|ST3|ST2|ST4|
+
+Lock: 297: key pins:    |ST2|ST1|ST3|ST3|ST1|
+
+Lock: 298: key pins:    |ST2|ST1|ST3|ST3|ST2|
+
+Lock: 299: key pins:    |ST2|ST1|ST3|ST3|ST3|
+
+Lock: 300: key pins:    |ST2|ST1|ST3|ST3|ST4|
+
+Lock: 301: key pins:    |ST2|ST1|ST3|ST4|ST1|
+
+Lock: 302: key pins:    |ST2|ST1|ST3|ST4|ST2|
+
+Lock: 303: key pins:    |ST2|ST1|ST3|ST4|ST3|
+
+Lock: 304: key pins:    |ST2|ST1|ST3|ST4|ST4|
+
+Lock: 305: key pins:    |ST2|ST1|ST4|ST1|ST1|
+
+Lock: 306: key pins:    |ST2|ST1|ST4|ST1|ST2|
+
+Lock: 307: key pins:    |ST2|ST1|ST4|ST1|ST3|
+
+Lock: 308: key pins:    |ST2|ST1|ST4|ST1|ST4|
+
+Lock: 309: key pins:    |ST2|ST1|ST4|ST2|ST1|
+
+Lock: 310: key pins:    |ST2|ST1|ST4|ST2|ST2|
+
+Lock: 311: key pins:    |ST2|ST1|ST4|ST2|ST3|
+
+Lock: 312: key pins:    |ST2|ST1|ST4|ST2|ST4|
+
+Lock: 313: key pins:    |ST2|ST1|ST4|ST3|ST1|
+
+Lock: 314: key pins:    |ST2|ST1|ST4|ST3|ST2|
+
+Lock: 315: key pins:    |ST2|ST1|ST4|ST3|ST3|
+
+Lock: 316: key pins:    |ST2|ST1|ST4|ST3|ST4|
+
+Lock: 317: key pins:    |ST2|ST1|ST4|ST4|ST1|
+
+Lock: 318: key pins:    |ST2|ST1|ST4|ST4|ST2|
+
+Lock: 319: key pins:    |ST2|ST1|ST4|ST4|ST3|
+
+Lock: 320: key pins:    |ST2|ST1|ST4|ST4|ST4|
+
+Lock: 321: key pins:    |ST2|ST2|ST1|ST1|ST1|
+
+Lock: 322: key pins:    |ST2|ST2|ST1|ST1|ST2|
+
+Lock: 323: key pins:    |ST2|ST2|ST1|ST1|ST3|
+
+Lock: 324: key pins:    |ST2|ST2|ST1|ST1|ST4|
+
+Lock: 325: key pins:    |ST2|ST2|ST1|ST2|ST1|
+
+Lock: 326: key pins:    |ST2|ST2|ST1|ST2|ST2|
+
+Lock: 327: key pins:    |ST2|ST2|ST1|ST2|ST3|
+
+Lock: 328: key pins:    |ST2|ST2|ST1|ST2|ST4|
+
+Lock: 329: key pins:    |ST2|ST2|ST1|ST3|ST1|
+
+Lock: 330: key pins:    |ST2|ST2|ST1|ST3|ST2|
+
+Lock: 331: key pins:    |ST2|ST2|ST1|ST3|ST3|
+
+Lock: 332: key pins:    |ST2|ST2|ST1|ST3|ST4|
+
+Lock: 333: key pins:    |ST2|ST2|ST1|ST4|ST1|
+
+Lock: 334: key pins:    |ST2|ST2|ST1|ST4|ST2|
+
+Lock: 335: key pins:    |ST2|ST2|ST1|ST4|ST3|
+
+Lock: 336: key pins:    |ST2|ST2|ST1|ST4|ST4|
+
+Lock: 337: key pins:    |ST2|ST2|ST2|ST1|ST1|
+
+Lock: 338: key pins:    |ST2|ST2|ST2|ST1|ST2|
+
+Lock: 339: key pins:    |ST2|ST2|ST2|ST1|ST3|
+
+Lock: 340: key pins:    |ST2|ST2|ST2|ST1|ST4|
+
+Lock: 341: key pins:    |ST2|ST2|ST2|ST2|ST1|
+
+Lock: 342: key pins:    |ST2|ST2|ST2|ST2|ST2|
+
+Lock: 343: key pins:    |ST2|ST2|ST2|ST2|ST3|
+
+Lock: 344: key pins:    |ST2|ST2|ST2|ST2|ST4|
+
+Lock: 345: key pins:    |ST2|ST2|ST2|ST3|ST1|
+
+Lock: 346: key pins:    |ST2|ST2|ST2|ST3|ST2|
+
+Lock: 347: key pins:    |ST2|ST2|ST2|ST3|ST3|
+
+Lock: 348: key pins:    |ST2|ST2|ST2|ST3|ST4|
+
+Lock: 349: key pins:    |ST2|ST2|ST2|ST4|ST1|
+
+Lock: 350: key pins:    |ST2|ST2|ST2|ST4|ST2|
+
+Lock: 351: key pins:    |ST2|ST2|ST2|ST4|ST3|
+
+Lock: 352: key pins:    |ST2|ST2|ST2|ST4|ST4|
+
+Lock: 353: key pins:    |ST2|ST2|ST3|ST1|ST1|
+
+Lock: 354: key pins:    |ST2|ST2|ST3|ST1|ST2|
+
+Lock: 355: key pins:    |ST2|ST2|ST3|ST1|ST3|
+
+Lock: 356: key pins:    |ST2|ST2|ST3|ST1|ST4|
+
+Lock: 357: key pins:    |ST2|ST2|ST3|ST2|ST1|
+
+Lock: 358: key pins:    |ST2|ST2|ST3|ST2|ST2|
+
+Lock: 359: key pins:    |ST2|ST2|ST3|ST2|ST3|
+
+Lock: 360: key pins:    |ST2|ST2|ST3|ST2|ST4|
+
+Lock: 361: key pins:    |ST2|ST2|ST3|ST3|ST1|
+
+Lock: 362: key pins:    |ST2|ST2|ST3|ST3|ST2|
+
+Lock: 363: key pins:    |ST2|ST2|ST3|ST3|ST3|
+
+Lock: 364: key pins:    |ST2|ST2|ST3|ST3|ST4|
+
+Lock: 365: key pins:    |ST2|ST2|ST3|ST4|ST1|
+
+Lock: 366: key pins:    |ST2|ST2|ST3|ST4|ST2|
+
+Lock: 367: key pins:    |ST2|ST2|ST3|ST4|ST3|
+
+Lock: 368: key pins:    |ST2|ST2|ST3|ST4|ST4|
+
+Lock: 369: key pins:    |ST2|ST2|ST4|ST1|ST1|
+
+Lock: 370: key pins:    |ST2|ST2|ST4|ST1|ST2|
+
+Lock: 371: key pins:    |ST2|ST2|ST4|ST1|ST3|
+
+Lock: 372: key pins:    |ST2|ST2|ST4|ST1|ST4|
+
+Lock: 373: key pins:    |ST2|ST2|ST4|ST2|ST1|
+
+Lock: 374: key pins:    |ST2|ST2|ST4|ST2|ST2|
+
+Lock: 375: key pins:    |ST2|ST2|ST4|ST2|ST3|
+
+Lock: 376: key pins:    |ST2|ST2|ST4|ST2|ST4|
+
+Lock: 377: key pins:    |ST2|ST2|ST4|ST3|ST1|
+
+Lock: 378: key pins:    |ST2|ST2|ST4|ST3|ST2|
+
+Lock: 379: key pins:    |ST2|ST2|ST4|ST3|ST3|
+
+Lock: 380: key pins:    |ST2|ST2|ST4|ST3|ST4|
+
+Lock: 381: key pins:    |ST2|ST2|ST4|ST4|ST1|
+
+Lock: 382: key pins:    |ST2|ST2|ST4|ST4|ST2|
+
+Lock: 383: key pins:    |ST2|ST2|ST4|ST4|ST3|
+
+Lock: 384: key pins:    |ST2|ST2|ST4|ST4|ST4|
+
+Lock: 385: key pins:    |ST2|ST3|ST1|ST1|ST1|
+
+Lock: 386: key pins:    |ST2|ST3|ST1|ST1|ST2|
+
+Lock: 387: key pins:    |ST2|ST3|ST1|ST1|ST3|
+
+Lock: 388: key pins:    |ST2|ST3|ST1|ST1|ST4|
+
+Lock: 389: key pins:    |ST2|ST3|ST1|ST2|ST1|
+
+Lock: 390: key pins:    |ST2|ST3|ST1|ST2|ST2|
+
+Lock: 391: key pins:    |ST2|ST3|ST1|ST2|ST3|
+
+Lock: 392: key pins:    |ST2|ST3|ST1|ST2|ST4|
+
+Lock: 393: key pins:    |ST2|ST3|ST1|ST3|ST1|
+
+Lock: 394: key pins:    |ST2|ST3|ST1|ST3|ST2|
+
+Lock: 395: key pins:    |ST2|ST3|ST1|ST3|ST3|
+
+Lock: 396: key pins:    |ST2|ST3|ST1|ST3|ST4|
+
+Lock: 397: key pins:    |ST2|ST3|ST1|ST4|ST1|
+
+Lock: 398: key pins:    |ST2|ST3|ST1|ST4|ST2|
+
+Lock: 399: key pins:    |ST2|ST3|ST1|ST4|ST3|
+
+Lock: 400: key pins:    |ST2|ST3|ST1|ST4|ST4|
+
+Lock: 401: key pins:    |ST2|ST3|ST2|ST1|ST1|
+
+Lock: 402: key pins:    |ST2|ST3|ST2|ST1|ST2|
+
+Lock: 403: key pins:    |ST2|ST3|ST2|ST1|ST3|
+
+Lock: 404: key pins:    |ST2|ST3|ST2|ST1|ST4|
+
+Lock: 405: key pins:    |ST2|ST3|ST2|ST2|ST1|
+
+Lock: 406: key pins:    |ST2|ST3|ST2|ST2|ST2|
+
+Lock: 407: key pins:    |ST2|ST3|ST2|ST2|ST3|
+
+Lock: 408: key pins:    |ST2|ST3|ST2|ST2|ST4|
+
+Lock: 409: key pins:    |ST2|ST3|ST2|ST3|ST1|
+
+Lock: 410: key pins:    |ST2|ST3|ST2|ST3|ST2|
+
+Lock: 411: key pins:    |ST2|ST3|ST2|ST3|ST3|
+
+Lock: 412: key pins:    |ST2|ST3|ST2|ST3|ST4|
+
+Lock: 413: key pins:    |ST2|ST3|ST2|ST4|ST1|
+
+Lock: 414: key pins:    |ST2|ST3|ST2|ST4|ST2|
+
+Lock: 415: key pins:    |ST2|ST3|ST2|ST4|ST3|
+
+Lock: 416: key pins:    |ST2|ST3|ST2|ST4|ST4|
+
+Lock: 417: key pins:    |ST2|ST3|ST3|ST1|ST1|
+
+Lock: 418: key pins:    |ST2|ST3|ST3|ST1|ST2|
+
+Lock: 419: key pins:    |ST2|ST3|ST3|ST1|ST3|
+
+Lock: 420: key pins:    |ST2|ST3|ST3|ST1|ST4|
+
+Lock: 421: key pins:    |ST2|ST3|ST3|ST2|ST1|
+
+Lock: 422: key pins:    |ST2|ST3|ST3|ST2|ST2|
+
+Lock: 423: key pins:    |ST2|ST3|ST3|ST2|ST3|
+
+Lock: 424: key pins:    |ST2|ST3|ST3|ST2|ST4|
+
+Lock: 425: key pins:    |ST2|ST3|ST3|ST3|ST1|
+
+Lock: 426: key pins:    |ST2|ST3|ST3|ST3|ST2|
+
+Lock: 427: key pins:    |ST2|ST3|ST3|ST3|ST3|
+
+Lock: 428: key pins:    |ST2|ST3|ST3|ST3|ST4|
+
+Lock: 429: key pins:    |ST2|ST3|ST3|ST4|ST1|
+
+Lock: 430: key pins:    |ST2|ST3|ST3|ST4|ST2|
+
+Lock: 431: key pins:    |ST2|ST3|ST3|ST4|ST3|
+
+Lock: 432: key pins:    |ST2|ST3|ST3|ST4|ST4|
+
+Lock: 433: key pins:    |ST2|ST3|ST4|ST1|ST1|
+
+Lock: 434: key pins:    |ST2|ST3|ST4|ST1|ST2|
+
+Lock: 435: key pins:    |ST2|ST3|ST4|ST1|ST3|
+
+Lock: 436: key pins:    |ST2|ST3|ST4|ST1|ST4|
+
+Lock: 437: key pins:    |ST2|ST3|ST4|ST2|ST1|
+
+Lock: 438: key pins:    |ST2|ST3|ST4|ST2|ST2|
+
+Lock: 439: key pins:    |ST2|ST3|ST4|ST2|ST3|
+
+Lock: 440: key pins:    |ST2|ST3|ST4|ST2|ST4|
+
+Lock: 441: key pins:    |ST2|ST3|ST4|ST3|ST1|
+
+Lock: 442: key pins:    |ST2|ST3|ST4|ST3|ST2|
+
+Lock: 443: key pins:    |ST2|ST3|ST4|ST3|ST3|
+
+Lock: 444: key pins:    |ST2|ST3|ST4|ST3|ST4|
+
+Lock: 445: key pins:    |ST2|ST3|ST4|ST4|ST1|
+
+Lock: 446: key pins:    |ST2|ST3|ST4|ST4|ST2|
+
+Lock: 447: key pins:    |ST2|ST3|ST4|ST4|ST3|
+
+Lock: 448: key pins:    |ST2|ST3|ST4|ST4|ST4|
+
+Lock: 449: key pins:    |ST2|ST4|ST1|ST1|ST1|
+
+Lock: 450: key pins:    |ST2|ST4|ST1|ST1|ST2|
+
+Lock: 451: key pins:    |ST2|ST4|ST1|ST1|ST3|
+
+Lock: 452: key pins:    |ST2|ST4|ST1|ST1|ST4|
+
+Lock: 453: key pins:    |ST2|ST4|ST1|ST2|ST1|
+
+Lock: 454: key pins:    |ST2|ST4|ST1|ST2|ST2|
+
+Lock: 455: key pins:    |ST2|ST4|ST1|ST2|ST3|
+
+Lock: 456: key pins:    |ST2|ST4|ST1|ST2|ST4|
+
+Lock: 457: key pins:    |ST2|ST4|ST1|ST3|ST1|
+
+Lock: 458: key pins:    |ST2|ST4|ST1|ST3|ST2|
+
+Lock: 459: key pins:    |ST2|ST4|ST1|ST3|ST3|
+
+Lock: 460: key pins:    |ST2|ST4|ST1|ST3|ST4|
+
+Lock: 461: key pins:    |ST2|ST4|ST1|ST4|ST1|
+
+Lock: 462: key pins:    |ST2|ST4|ST1|ST4|ST2|
+
+Lock: 463: key pins:    |ST2|ST4|ST1|ST4|ST3|
+
+Lock: 464: key pins:    |ST2|ST4|ST1|ST4|ST4|
+
+Lock: 465: key pins:    |ST2|ST4|ST2|ST1|ST1|
+
+Lock: 466: key pins:    |ST2|ST4|ST2|ST1|ST2|
+
+Lock: 467: key pins:    |ST2|ST4|ST2|ST1|ST3|
+
+Lock: 468: key pins:    |ST2|ST4|ST2|ST1|ST4|
+
+Lock: 469: key pins:    |ST2|ST4|ST2|ST2|ST1|
+
+Lock: 470: key pins:    |ST2|ST4|ST2|ST2|ST2|
+
+Lock: 471: key pins:    |ST2|ST4|ST2|ST2|ST3|
+
+Lock: 472: key pins:    |ST2|ST4|ST2|ST2|ST4|
+
+Lock: 473: key pins:    |ST2|ST4|ST2|ST3|ST1|
+
+Lock: 474: key pins:    |ST2|ST4|ST2|ST3|ST2|
+
+Lock: 475: key pins:    |ST2|ST4|ST2|ST3|ST3|
+
+Lock: 476: key pins:    |ST2|ST4|ST2|ST3|ST4|
+
+Lock: 477: key pins:    |ST2|ST4|ST2|ST4|ST1|
+
+Lock: 478: key pins:    |ST2|ST4|ST2|ST4|ST2|
+
+Lock: 479: key pins:    |ST2|ST4|ST2|ST4|ST3|
+
+Lock: 480: key pins:    |ST2|ST4|ST2|ST4|ST4|
+
+Lock: 481: key pins:    |ST2|ST4|ST3|ST1|ST1|
+
+Lock: 482: key pins:    |ST2|ST4|ST3|ST1|ST2|
+
+Lock: 483: key pins:    |ST2|ST4|ST3|ST1|ST3|
+
+Lock: 484: key pins:    |ST2|ST4|ST3|ST1|ST4|
+
+Lock: 485: key pins:    |ST2|ST4|ST3|ST2|ST1|
+
+Lock: 486: key pins:    |ST2|ST4|ST3|ST2|ST2|
+
+Lock: 487: key pins:    |ST2|ST4|ST3|ST2|ST3|
+
+Lock: 488: key pins:    |ST2|ST4|ST3|ST2|ST4|
+
+Lock: 489: key pins:    |ST2|ST4|ST3|ST3|ST1|
+
+Lock: 490: key pins:    |ST2|ST4|ST3|ST3|ST2|
+
+Lock: 491: key pins:    |ST2|ST4|ST3|ST3|ST3|
+
+Lock: 492: key pins:    |ST2|ST4|ST3|ST3|ST4|
+
+Lock: 493: key pins:    |ST2|ST4|ST3|ST4|ST1|
+
+Lock: 494: key pins:    |ST2|ST4|ST3|ST4|ST2|
+
+Lock: 495: key pins:    |ST2|ST4|ST3|ST4|ST3|
+
+Lock: 496: key pins:    |ST2|ST4|ST3|ST4|ST4|
+
+Lock: 497: key pins:    |ST2|ST4|ST4|ST1|ST1|
+
+Lock: 498: key pins:    |ST2|ST4|ST4|ST1|ST2|
+
+Lock: 499: key pins:    |ST2|ST4|ST4|ST1|ST3|
+
+Lock: 500: key pins:    |ST2|ST4|ST4|ST1|ST4|
+
+Lock: 501: key pins:    |ST2|ST4|ST4|ST2|ST1|
+
+Lock: 502: key pins:    |ST2|ST4|ST4|ST2|ST2|
+
+Lock: 503: key pins:    |ST2|ST4|ST4|ST2|ST3|
+
+Lock: 504: key pins:    |ST2|ST4|ST4|ST2|ST4|
+
+Lock: 505: key pins:    |ST2|ST4|ST4|ST3|ST1|
+
+Lock: 506: key pins:    |ST2|ST4|ST4|ST3|ST2|
+
+Lock: 507: key pins:    |ST2|ST4|ST4|ST3|ST3|
+
+Lock: 508: key pins:    |ST2|ST4|ST4|ST3|ST4|
+
+Lock: 509: key pins:    |ST2|ST4|ST4|ST4|ST1|
+
+Lock: 510: key pins:    |ST2|ST4|ST4|ST4|ST2|
+
+Lock: 511: key pins:    |ST2|ST4|ST4|ST4|ST3|
+
+Lock: 512: key pins:    |ST2|ST4|ST4|ST4|ST4|
+
+Lock: 513: key pins:    |ST3|ST1|ST1|ST1|ST1|
+
+Lock: 514: key pins:    |ST3|ST1|ST1|ST1|ST2|
+
+Lock: 515: key pins:    |ST3|ST1|ST1|ST1|ST3|
+
+Lock: 516: key pins:    |ST3|ST1|ST1|ST1|ST4|
+
+Lock: 517: key pins:    |ST3|ST1|ST1|ST2|ST1|
+
+Lock: 518: key pins:    |ST3|ST1|ST1|ST2|ST2|
+
+Lock: 519: key pins:    |ST3|ST1|ST1|ST2|ST3|
+
+Lock: 520: key pins:    |ST3|ST1|ST1|ST2|ST4|
+
+Lock: 521: key pins:    |ST3|ST1|ST1|ST3|ST1|
+
+Lock: 522: key pins:    |ST3|ST1|ST1|ST3|ST2|
+
+Lock: 523: key pins:    |ST3|ST1|ST1|ST3|ST3|
+
+Lock: 524: key pins:    |ST3|ST1|ST1|ST3|ST4|
+
+Lock: 525: key pins:    |ST3|ST1|ST1|ST4|ST1|
+
+Lock: 526: key pins:    |ST3|ST1|ST1|ST4|ST2|
+
+Lock: 527: key pins:    |ST3|ST1|ST1|ST4|ST3|
+
+Lock: 528: key pins:    |ST3|ST1|ST1|ST4|ST4|
+
+Lock: 529: key pins:    |ST3|ST1|ST2|ST1|ST1|
+
+Lock: 530: key pins:    |ST3|ST1|ST2|ST1|ST2|
+
+Lock: 531: key pins:    |ST3|ST1|ST2|ST1|ST3|
+
+Lock: 532: key pins:    |ST3|ST1|ST2|ST1|ST4|
+
+Lock: 533: key pins:    |ST3|ST1|ST2|ST2|ST1|
+
+Lock: 534: key pins:    |ST3|ST1|ST2|ST2|ST2|
+
+Lock: 535: key pins:    |ST3|ST1|ST2|ST2|ST3|
+
+Lock: 536: key pins:    |ST3|ST1|ST2|ST2|ST4|
+
+Lock: 537: key pins:    |ST3|ST1|ST2|ST3|ST1|
+
+Lock: 538: key pins:    |ST3|ST1|ST2|ST3|ST2|
+
+Lock: 539: key pins:    |ST3|ST1|ST2|ST3|ST3|
+
+Lock: 540: key pins:    |ST3|ST1|ST2|ST3|ST4|
+
+Lock: 541: key pins:    |ST3|ST1|ST2|ST4|ST1|
+
+Lock: 542: key pins:    |ST3|ST1|ST2|ST4|ST2|
+
+Lock: 543: key pins:    |ST3|ST1|ST2|ST4|ST3|
+
+Lock: 544: key pins:    |ST3|ST1|ST2|ST4|ST4|
+
+Lock: 545: key pins:    |ST3|ST1|ST3|ST1|ST1|
+
+Lock: 546: key pins:    |ST3|ST1|ST3|ST1|ST2|
+
+Lock: 547: key pins:    |ST3|ST1|ST3|ST1|ST3|
+
+Lock: 548: key pins:    |ST3|ST1|ST3|ST1|ST4|
+
+Lock: 549: key pins:    |ST3|ST1|ST3|ST2|ST1|
+
+Lock: 550: key pins:    |ST3|ST1|ST3|ST2|ST2|
+
+Lock: 551: key pins:    |ST3|ST1|ST3|ST2|ST3|
+
+Lock: 552: key pins:    |ST3|ST1|ST3|ST2|ST4|
+
+Lock: 553: key pins:    |ST3|ST1|ST3|ST3|ST1|
+
+Lock: 554: key pins:    |ST3|ST1|ST3|ST3|ST2|
+
+Lock: 555: key pins:    |ST3|ST1|ST3|ST3|ST3|
+
+Lock: 556: key pins:    |ST3|ST1|ST3|ST3|ST4|
+
+Lock: 557: key pins:    |ST3|ST1|ST3|ST4|ST1|
+
+Lock: 558: key pins:    |ST3|ST1|ST3|ST4|ST2|
+
+Lock: 559: key pins:    |ST3|ST1|ST3|ST4|ST3|
+
+Lock: 560: key pins:    |ST3|ST1|ST3|ST4|ST4|
+
+Lock: 561: key pins:    |ST3|ST1|ST4|ST1|ST1|
+
+Lock: 562: key pins:    |ST3|ST1|ST4|ST1|ST2|
+
+Lock: 563: key pins:    |ST3|ST1|ST4|ST1|ST3|
+
+Lock: 564: key pins:    |ST3|ST1|ST4|ST1|ST4|
+
+Lock: 565: key pins:    |ST3|ST1|ST4|ST2|ST1|
+
+Lock: 566: key pins:    |ST3|ST1|ST4|ST2|ST2|
+
+Lock: 567: key pins:    |ST3|ST1|ST4|ST2|ST3|
+
+Lock: 568: key pins:    |ST3|ST1|ST4|ST2|ST4|
+
+Lock: 569: key pins:    |ST3|ST1|ST4|ST3|ST1|
+
+Lock: 570: key pins:    |ST3|ST1|ST4|ST3|ST2|
+
+Lock: 571: key pins:    |ST3|ST1|ST4|ST3|ST3|
+
+Lock: 572: key pins:    |ST3|ST1|ST4|ST3|ST4|
+
+Lock: 573: key pins:    |ST3|ST1|ST4|ST4|ST1|
+
+Lock: 574: key pins:    |ST3|ST1|ST4|ST4|ST2|
+
+Lock: 575: key pins:    |ST3|ST1|ST4|ST4|ST3|
+
+Lock: 576: key pins:    |ST3|ST1|ST4|ST4|ST4|
+
+Lock: 577: key pins:    |ST3|ST2|ST1|ST1|ST1|
+
+Lock: 578: key pins:    |ST3|ST2|ST1|ST1|ST2|
+
+Lock: 579: key pins:    |ST3|ST2|ST1|ST1|ST3|
+
+Lock: 580: key pins:    |ST3|ST2|ST1|ST1|ST4|
+
+Lock: 581: key pins:    |ST3|ST2|ST1|ST2|ST1|
+
+Lock: 582: key pins:    |ST3|ST2|ST1|ST2|ST2|
+
+Lock: 583: key pins:    |ST3|ST2|ST1|ST2|ST3|
+
+Lock: 584: key pins:    |ST3|ST2|ST1|ST2|ST4|
+
+Lock: 585: key pins:    |ST3|ST2|ST1|ST3|ST1|
+
+Lock: 586: key pins:    |ST3|ST2|ST1|ST3|ST2|
+
+Lock: 587: key pins:    |ST3|ST2|ST1|ST3|ST3|
+
+Lock: 588: key pins:    |ST3|ST2|ST1|ST3|ST4|
+
+Lock: 589: key pins:    |ST3|ST2|ST1|ST4|ST1|
+
+Lock: 590: key pins:    |ST3|ST2|ST1|ST4|ST2|
+
+Lock: 591: key pins:    |ST3|ST2|ST1|ST4|ST3|
+
+Lock: 592: key pins:    |ST3|ST2|ST1|ST4|ST4|
+
+Lock: 593: key pins:    |ST3|ST2|ST2|ST1|ST1|
+
+Lock: 594: key pins:    |ST3|ST2|ST2|ST1|ST2|
+
+Lock: 595: key pins:    |ST3|ST2|ST2|ST1|ST3|
+
+Lock: 596: key pins:    |ST3|ST2|ST2|ST1|ST4|
+
+Lock: 597: key pins:    |ST3|ST2|ST2|ST2|ST1|
+
+Lock: 598: key pins:    |ST3|ST2|ST2|ST2|ST2|
+
+Lock: 599: key pins:    |ST3|ST2|ST2|ST2|ST3|
+
+Lock: 600: key pins:    |ST3|ST2|ST2|ST2|ST4|
+
+Lock: 601: key pins:    |ST3|ST2|ST2|ST3|ST1|
+
+Lock: 602: key pins:    |ST3|ST2|ST2|ST3|ST2|
+
+Lock: 603: key pins:    |ST3|ST2|ST2|ST3|ST3|
+
+Lock: 604: key pins:    |ST3|ST2|ST2|ST3|ST4|
+
+Lock: 605: key pins:    |ST3|ST2|ST2|ST4|ST1|
+
+Lock: 606: key pins:    |ST3|ST2|ST2|ST4|ST2|
+
+Lock: 607: key pins:    |ST3|ST2|ST2|ST4|ST3|
+
+Lock: 608: key pins:    |ST3|ST2|ST2|ST4|ST4|
+
+Lock: 609: key pins:    |ST3|ST2|ST3|ST1|ST1|
+
+Lock: 610: key pins:    |ST3|ST2|ST3|ST1|ST2|
+
+Lock: 611: key pins:    |ST3|ST2|ST3|ST1|ST3|
+
+Lock: 612: key pins:    |ST3|ST2|ST3|ST1|ST4|
+
+Lock: 613: key pins:    |ST3|ST2|ST3|ST2|ST1|
+
+Lock: 614: key pins:    |ST3|ST2|ST3|ST2|ST2|
+
+Lock: 615: key pins:    |ST3|ST2|ST3|ST2|ST3|
+
+Lock: 616: key pins:    |ST3|ST2|ST3|ST2|ST4|
+
+Lock: 617: key pins:    |ST3|ST2|ST3|ST3|ST1|
+
+Lock: 618: key pins:    |ST3|ST2|ST3|ST3|ST2|
+
+Lock: 619: key pins:    |ST3|ST2|ST3|ST3|ST3|
+
+Lock: 620: key pins:    |ST3|ST2|ST3|ST3|ST4|
+
+Lock: 621: key pins:    |ST3|ST2|ST3|ST4|ST1|
+
+Lock: 622: key pins:    |ST3|ST2|ST3|ST4|ST2|
+
+Lock: 623: key pins:    |ST3|ST2|ST3|ST4|ST3|
+
+Lock: 624: key pins:    |ST3|ST2|ST3|ST4|ST4|
+
+Lock: 625: key pins:    |ST3|ST2|ST4|ST1|ST1|
+
+Lock: 626: key pins:    |ST3|ST2|ST4|ST1|ST2|
+
+Lock: 627: key pins:    |ST3|ST2|ST4|ST1|ST3|
+
+Lock: 628: key pins:    |ST3|ST2|ST4|ST1|ST4|
+
+Lock: 629: key pins:    |ST3|ST2|ST4|ST2|ST1|
+
+Lock: 630: key pins:    |ST3|ST2|ST4|ST2|ST2|
+
+Lock: 631: key pins:    |ST3|ST2|ST4|ST2|ST3|
+
+Lock: 632: key pins:    |ST3|ST2|ST4|ST2|ST4|
+
+Lock: 633: key pins:    |ST3|ST2|ST4|ST3|ST1|
+
+Lock: 634: key pins:    |ST3|ST2|ST4|ST3|ST2|
+
+Lock: 635: key pins:    |ST3|ST2|ST4|ST3|ST3|
+
+Lock: 636: key pins:    |ST3|ST2|ST4|ST3|ST4|
+
+Lock: 637: key pins:    |ST3|ST2|ST4|ST4|ST1|
+
+Lock: 638: key pins:    |ST3|ST2|ST4|ST4|ST2|
+
+Lock: 639: key pins:    |ST3|ST2|ST4|ST4|ST3|
+
+Lock: 640: key pins:    |ST3|ST2|ST4|ST4|ST4|
+
+Lock: 641: key pins:    |ST3|ST3|ST1|ST1|ST1|
+
+Lock: 642: key pins:    |ST3|ST3|ST1|ST1|ST2|
+
+Lock: 643: key pins:    |ST3|ST3|ST1|ST1|ST3|
+
+Lock: 644: key pins:    |ST3|ST3|ST1|ST1|ST4|
+
+Lock: 645: key pins:    |ST3|ST3|ST1|ST2|ST1|
+
+Lock: 646: key pins:    |ST3|ST3|ST1|ST2|ST2|
+
+Lock: 647: key pins:    |ST3|ST3|ST1|ST2|ST3|
+
+Lock: 648: key pins:    |ST3|ST3|ST1|ST2|ST4|
+
+Lock: 649: key pins:    |ST3|ST3|ST1|ST3|ST1|
+
+Lock: 650: key pins:    |ST3|ST3|ST1|ST3|ST2|
+
+Lock: 651: key pins:    |ST3|ST3|ST1|ST3|ST3|
+
+Lock: 652: key pins:    |ST3|ST3|ST1|ST3|ST4|
+
+Lock: 653: key pins:    |ST3|ST3|ST1|ST4|ST1|
+
+Lock: 654: key pins:    |ST3|ST3|ST1|ST4|ST2|
+
+Lock: 655: key pins:    |ST3|ST3|ST1|ST4|ST3|
+
+Lock: 656: key pins:    |ST3|ST3|ST1|ST4|ST4|
+
+Lock: 657: key pins:    |ST3|ST3|ST2|ST1|ST1|
+
+Lock: 658: key pins:    |ST3|ST3|ST2|ST1|ST2|
+
+Lock: 659: key pins:    |ST3|ST3|ST2|ST1|ST3|
+
+Lock: 660: key pins:    |ST3|ST3|ST2|ST1|ST4|
+
+Lock: 661: key pins:    |ST3|ST3|ST2|ST2|ST1|
+
+Lock: 662: key pins:    |ST3|ST3|ST2|ST2|ST2|
+
+Lock: 663: key pins:    |ST3|ST3|ST2|ST2|ST3|
+
+Lock: 664: key pins:    |ST3|ST3|ST2|ST2|ST4|
+
+Lock: 665: key pins:    |ST3|ST3|ST2|ST3|ST1|
+
+Lock: 666: key pins:    |ST3|ST3|ST2|ST3|ST2|
+
+Lock: 667: key pins:    |ST3|ST3|ST2|ST3|ST3|
+
+Lock: 668: key pins:    |ST3|ST3|ST2|ST3|ST4|
+
+Lock: 669: key pins:    |ST3|ST3|ST2|ST4|ST1|
+
+Lock: 670: key pins:    |ST3|ST3|ST2|ST4|ST2|
+
+Lock: 671: key pins:    |ST3|ST3|ST2|ST4|ST3|
+
+Lock: 672: key pins:    |ST3|ST3|ST2|ST4|ST4|
+
+Lock: 673: key pins:    |ST3|ST3|ST3|ST1|ST1|
+
+Lock: 674: key pins:    |ST3|ST3|ST3|ST1|ST2|
+
+Lock: 675: key pins:    |ST3|ST3|ST3|ST1|ST3|
+
+Lock: 676: key pins:    |ST3|ST3|ST3|ST1|ST4|
+
+Lock: 677: key pins:    |ST3|ST3|ST3|ST2|ST1|
+
+Lock: 678: key pins:    |ST3|ST3|ST3|ST2|ST2|
+
+Lock: 679: key pins:    |ST3|ST3|ST3|ST2|ST3|
+
+Lock: 680: key pins:    |ST3|ST3|ST3|ST2|ST4|
+
+Lock: 681: key pins:    |ST3|ST3|ST3|ST3|ST1|
+
+Lock: 682: key pins:    |ST3|ST3|ST3|ST3|ST2|
+
+Lock: 683: key pins:    |ST3|ST3|ST3|ST3|ST3|
+
+Lock: 684: key pins:    |ST3|ST3|ST3|ST3|ST4|
+
+Lock: 685: key pins:    |ST3|ST3|ST3|ST4|ST1|
+
+Lock: 686: key pins:    |ST3|ST3|ST3|ST4|ST2|
+
+Lock: 687: key pins:    |ST3|ST3|ST3|ST4|ST3|
+
+Lock: 688: key pins:    |ST3|ST3|ST3|ST4|ST4|
+
+Lock: 689: key pins:    |ST3|ST3|ST4|ST1|ST1|
+
+Lock: 690: key pins:    |ST3|ST3|ST4|ST1|ST2|
+
+Lock: 691: key pins:    |ST3|ST3|ST4|ST1|ST3|
+
+Lock: 692: key pins:    |ST3|ST3|ST4|ST1|ST4|
+
+Lock: 693: key pins:    |ST3|ST3|ST4|ST2|ST1|
+
+Lock: 694: key pins:    |ST3|ST3|ST4|ST2|ST2|
+
+Lock: 695: key pins:    |ST3|ST3|ST4|ST2|ST3|
+
+Lock: 696: key pins:    |ST3|ST3|ST4|ST2|ST4|
+
+Lock: 697: key pins:    |ST3|ST3|ST4|ST3|ST1|
+
+Lock: 698: key pins:    |ST3|ST3|ST4|ST3|ST2|
+
+Lock: 699: key pins:    |ST3|ST3|ST4|ST3|ST3|
+
+Lock: 700: key pins:    |ST3|ST3|ST4|ST3|ST4|
+
+Lock: 701: key pins:    |ST3|ST3|ST4|ST4|ST1|
+
+Lock: 702: key pins:    |ST3|ST3|ST4|ST4|ST2|
+
+Lock: 703: key pins:    |ST3|ST3|ST4|ST4|ST3|
+
+Lock: 704: key pins:    |ST3|ST3|ST4|ST4|ST4|
+
+Lock: 705: key pins:    |ST3|ST4|ST1|ST1|ST1|
+
+Lock: 706: key pins:    |ST3|ST4|ST1|ST1|ST2|
+
+Lock: 707: key pins:    |ST3|ST4|ST1|ST1|ST3|
+
+Lock: 708: key pins:    |ST3|ST4|ST1|ST1|ST4|
+
+Lock: 709: key pins:    |ST3|ST4|ST1|ST2|ST1|
+
+Lock: 710: key pins:    |ST3|ST4|ST1|ST2|ST2|
+
+Lock: 711: key pins:    |ST3|ST4|ST1|ST2|ST3|
+
+Lock: 712: key pins:    |ST3|ST4|ST1|ST2|ST4|
+
+Lock: 713: key pins:    |ST3|ST4|ST1|ST3|ST1|
+
+Lock: 714: key pins:    |ST3|ST4|ST1|ST3|ST2|
+
+Lock: 715: key pins:    |ST3|ST4|ST1|ST3|ST3|
+
+Lock: 716: key pins:    |ST3|ST4|ST1|ST3|ST4|
+
+Lock: 717: key pins:    |ST3|ST4|ST1|ST4|ST1|
+
+Lock: 718: key pins:    |ST3|ST4|ST1|ST4|ST2|
+
+Lock: 719: key pins:    |ST3|ST4|ST1|ST4|ST3|
+
+Lock: 720: key pins:    |ST3|ST4|ST1|ST4|ST4|
+
+Lock: 721: key pins:    |ST3|ST4|ST2|ST1|ST1|
+
+Lock: 722: key pins:    |ST3|ST4|ST2|ST1|ST2|
+
+Lock: 723: key pins:    |ST3|ST4|ST2|ST1|ST3|
+
+Lock: 724: key pins:    |ST3|ST4|ST2|ST1|ST4|
+
+Lock: 725: key pins:    |ST3|ST4|ST2|ST2|ST1|
+
+Lock: 726: key pins:    |ST3|ST4|ST2|ST2|ST2|
+
+Lock: 727: key pins:    |ST3|ST4|ST2|ST2|ST3|
+
+Lock: 728: key pins:    |ST3|ST4|ST2|ST2|ST4|
+
+Lock: 729: key pins:    |ST3|ST4|ST2|ST3|ST1|
+
+Lock: 730: key pins:    |ST3|ST4|ST2|ST3|ST2|
+
+Lock: 731: key pins:    |ST3|ST4|ST2|ST3|ST3|
+
+Lock: 732: key pins:    |ST3|ST4|ST2|ST3|ST4|
+
+Lock: 733: key pins:    |ST3|ST4|ST2|ST4|ST1|
+
+Lock: 734: key pins:    |ST3|ST4|ST2|ST4|ST2|
+
+Lock: 735: key pins:    |ST3|ST4|ST2|ST4|ST3|
+
+Lock: 736: key pins:    |ST3|ST4|ST2|ST4|ST4|
+
+Lock: 737: key pins:    |ST3|ST4|ST3|ST1|ST1|
+
+Lock: 738: key pins:    |ST3|ST4|ST3|ST1|ST2|
+
+Lock: 739: key pins:    |ST3|ST4|ST3|ST1|ST3|
+
+Lock: 740: key pins:    |ST3|ST4|ST3|ST1|ST4|
+
+Lock: 741: key pins:    |ST3|ST4|ST3|ST2|ST1|
+
+Lock: 742: key pins:    |ST3|ST4|ST3|ST2|ST2|
+
+Lock: 743: key pins:    |ST3|ST4|ST3|ST2|ST3|
+
+Lock: 744: key pins:    |ST3|ST4|ST3|ST2|ST4|
+
+Lock: 745: key pins:    |ST3|ST4|ST3|ST3|ST1|
+
+Lock: 746: key pins:    |ST3|ST4|ST3|ST3|ST2|
+
+Lock: 747: key pins:    |ST3|ST4|ST3|ST3|ST3|
+
+Lock: 748: key pins:    |ST3|ST4|ST3|ST3|ST4|
+
+Lock: 749: key pins:    |ST3|ST4|ST3|ST4|ST1|
+
+Lock: 750: key pins:    |ST3|ST4|ST3|ST4|ST2|
+
+Lock: 751: key pins:    |ST3|ST4|ST3|ST4|ST3|
+
+Lock: 752: key pins:    |ST3|ST4|ST3|ST4|ST4|
+
+Lock: 753: key pins:    |ST3|ST4|ST4|ST1|ST1|
+
+Lock: 754: key pins:    |ST3|ST4|ST4|ST1|ST2|
+
+Lock: 755: key pins:    |ST3|ST4|ST4|ST1|ST3|
+
+Lock: 756: key pins:    |ST3|ST4|ST4|ST1|ST4|
+
+Lock: 757: key pins:    |ST3|ST4|ST4|ST2|ST1|
+
+Lock: 758: key pins:    |ST3|ST4|ST4|ST2|ST2|
+
+Lock: 759: key pins:    |ST3|ST4|ST4|ST2|ST3|
+
+Lock: 760: key pins:    |ST3|ST4|ST4|ST2|ST4|
+
+Lock: 761: key pins:    |ST3|ST4|ST4|ST3|ST1|
+
+Lock: 762: key pins:    |ST3|ST4|ST4|ST3|ST2|
+
+Lock: 763: key pins:    |ST3|ST4|ST4|ST3|ST3|
+
+Lock: 764: key pins:    |ST3|ST4|ST4|ST3|ST4|
+
+Lock: 765: key pins:    |ST3|ST4|ST4|ST4|ST1|
+
+Lock: 766: key pins:    |ST3|ST4|ST4|ST4|ST2|
+
+Lock: 767: key pins:    |ST3|ST4|ST4|ST4|ST3|
+
+Lock: 768: key pins:    |ST3|ST4|ST4|ST4|ST4|
+
+Lock: 769: key pins:    |ST4|ST1|ST1|ST1|ST1|
+
+Lock: 770: key pins:    |ST4|ST1|ST1|ST1|ST2|
+
+Lock: 771: key pins:    |ST4|ST1|ST1|ST1|ST3|
+
+Lock: 772: key pins:    |ST4|ST1|ST1|ST1|ST4|
+
+Lock: 773: key pins:    |ST4|ST1|ST1|ST2|ST1|
+
+Lock: 774: key pins:    |ST4|ST1|ST1|ST2|ST2|
+
+Lock: 775: key pins:    |ST4|ST1|ST1|ST2|ST3|
+
+Lock: 776: key pins:    |ST4|ST1|ST1|ST2|ST4|
+
+Lock: 777: key pins:    |ST4|ST1|ST1|ST3|ST1|
+
+Lock: 778: key pins:    |ST4|ST1|ST1|ST3|ST2|
+
+Lock: 779: key pins:    |ST4|ST1|ST1|ST3|ST3|
+
+Lock: 780: key pins:    |ST4|ST1|ST1|ST3|ST4|
+
+Lock: 781: key pins:    |ST4|ST1|ST1|ST4|ST1|
+
+Lock: 782: key pins:    |ST4|ST1|ST1|ST4|ST2|
+
+Lock: 783: key pins:    |ST4|ST1|ST1|ST4|ST3|
+
+Lock: 784: key pins:    |ST4|ST1|ST1|ST4|ST4|
+
+Lock: 785: key pins:    |ST4|ST1|ST2|ST1|ST1|
+
+Lock: 786: key pins:    |ST4|ST1|ST2|ST1|ST2|
+
+Lock: 787: key pins:    |ST4|ST1|ST2|ST1|ST3|
+
+Lock: 788: key pins:    |ST4|ST1|ST2|ST1|ST4|
+
+Lock: 789: key pins:    |ST4|ST1|ST2|ST2|ST1|
+
+Lock: 790: key pins:    |ST4|ST1|ST2|ST2|ST2|
+
+Lock: 791: key pins:    |ST4|ST1|ST2|ST2|ST3|
+
+Lock: 792: key pins:    |ST4|ST1|ST2|ST2|ST4|
+
+Lock: 793: key pins:    |ST4|ST1|ST2|ST3|ST1|
+
+Lock: 794: key pins:    |ST4|ST1|ST2|ST3|ST2|
+
+Lock: 795: key pins:    |ST4|ST1|ST2|ST3|ST3|
+
+Lock: 796: key pins:    |ST4|ST1|ST2|ST3|ST4|
+
+Lock: 797: key pins:    |ST4|ST1|ST2|ST4|ST1|
+
+Lock: 798: key pins:    |ST4|ST1|ST2|ST4|ST2|
+
+Lock: 799: key pins:    |ST4|ST1|ST2|ST4|ST3|
+
+Lock: 800: key pins:    |ST4|ST1|ST2|ST4|ST4|
+
+Lock: 801: key pins:    |ST4|ST1|ST3|ST1|ST1|
+
+Lock: 802: key pins:    |ST4|ST1|ST3|ST1|ST2|
+
+Lock: 803: key pins:    |ST4|ST1|ST3|ST1|ST3|
+
+Lock: 804: key pins:    |ST4|ST1|ST3|ST1|ST4|
+
+Lock: 805: key pins:    |ST4|ST1|ST3|ST2|ST1|
+
+Lock: 806: key pins:    |ST4|ST1|ST3|ST2|ST2|
+
+Lock: 807: key pins:    |ST4|ST1|ST3|ST2|ST3|
+
+Lock: 808: key pins:    |ST4|ST1|ST3|ST2|ST4|
+
+Lock: 809: key pins:    |ST4|ST1|ST3|ST3|ST1|
+
+Lock: 810: key pins:    |ST4|ST1|ST3|ST3|ST2|
+
+Lock: 811: key pins:    |ST4|ST1|ST3|ST3|ST3|
+
+Lock: 812: key pins:    |ST4|ST1|ST3|ST3|ST4|
+
+Lock: 813: key pins:    |ST4|ST1|ST3|ST4|ST1|
+
+Lock: 814: key pins:    |ST4|ST1|ST3|ST4|ST2|
+
+Lock: 815: key pins:    |ST4|ST1|ST3|ST4|ST3|
+
+Lock: 816: key pins:    |ST4|ST1|ST3|ST4|ST4|
+
+Lock: 817: key pins:    |ST4|ST1|ST4|ST1|ST1|
+
+Lock: 818: key pins:    |ST4|ST1|ST4|ST1|ST2|
+
+Lock: 819: key pins:    |ST4|ST1|ST4|ST1|ST3|
+
+Lock: 820: key pins:    |ST4|ST1|ST4|ST1|ST4|
+
+Lock: 821: key pins:    |ST4|ST1|ST4|ST2|ST1|
+
+Lock: 822: key pins:    |ST4|ST1|ST4|ST2|ST2|
+
+Lock: 823: key pins:    |ST4|ST1|ST4|ST2|ST3|
+
+Lock: 824: key pins:    |ST4|ST1|ST4|ST2|ST4|
+
+Lock: 825: key pins:    |ST4|ST1|ST4|ST3|ST1|
+
+Lock: 826: key pins:    |ST4|ST1|ST4|ST3|ST2|
+
+Lock: 827: key pins:    |ST4|ST1|ST4|ST3|ST3|
+
+Lock: 828: key pins:    |ST4|ST1|ST4|ST3|ST4|
+
+Lock: 829: key pins:    |ST4|ST1|ST4|ST4|ST1|
+
+Lock: 830: key pins:    |ST4|ST1|ST4|ST4|ST2|
+
+Lock: 831: key pins:    |ST4|ST1|ST4|ST4|ST3|
+
+Lock: 832: key pins:    |ST4|ST1|ST4|ST4|ST4|
+
+Lock: 833: key pins:    |ST4|ST2|ST1|ST1|ST1|
+
+Lock: 834: key pins:    |ST4|ST2|ST1|ST1|ST2|
+
+Lock: 835: key pins:    |ST4|ST2|ST1|ST1|ST3|
+
+Lock: 836: key pins:    |ST4|ST2|ST1|ST1|ST4|
+
+Lock: 837: key pins:    |ST4|ST2|ST1|ST2|ST1|
+
+Lock: 838: key pins:    |ST4|ST2|ST1|ST2|ST2|
+
+Lock: 839: key pins:    |ST4|ST2|ST1|ST2|ST3|
+
+Lock: 840: key pins:    |ST4|ST2|ST1|ST2|ST4|
+
+Lock: 841: key pins:    |ST4|ST2|ST1|ST3|ST1|
+
+Lock: 842: key pins:    |ST4|ST2|ST1|ST3|ST2|
+
+Lock: 843: key pins:    |ST4|ST2|ST1|ST3|ST3|
+
+Lock: 844: key pins:    |ST4|ST2|ST1|ST3|ST4|
+
+Lock: 845: key pins:    |ST4|ST2|ST1|ST4|ST1|
+
+Lock: 846: key pins:    |ST4|ST2|ST1|ST4|ST2|
+
+Lock: 847: key pins:    |ST4|ST2|ST1|ST4|ST3|
+
+Lock: 848: key pins:    |ST4|ST2|ST1|ST4|ST4|
+
+Lock: 849: key pins:    |ST4|ST2|ST2|ST1|ST1|
+
+Lock: 850: key pins:    |ST4|ST2|ST2|ST1|ST2|
+
+Lock: 851: key pins:    |ST4|ST2|ST2|ST1|ST3|
+
+Lock: 852: key pins:    |ST4|ST2|ST2|ST1|ST4|
+
+Lock: 853: key pins:    |ST4|ST2|ST2|ST2|ST1|
+
+Lock: 854: key pins:    |ST4|ST2|ST2|ST2|ST2|
+
+Lock: 855: key pins:    |ST4|ST2|ST2|ST2|ST3|
+
+Lock: 856: key pins:    |ST4|ST2|ST2|ST2|ST4|
+
+Lock: 857: key pins:    |ST4|ST2|ST2|ST3|ST1|
+
+Lock: 858: key pins:    |ST4|ST2|ST2|ST3|ST2|
+
+Lock: 859: key pins:    |ST4|ST2|ST2|ST3|ST3|
+
+Lock: 860: key pins:    |ST4|ST2|ST2|ST3|ST4|
+
+Lock: 861: key pins:    |ST4|ST2|ST2|ST4|ST1|
+
+Lock: 862: key pins:    |ST4|ST2|ST2|ST4|ST2|
+
+Lock: 863: key pins:    |ST4|ST2|ST2|ST4|ST3|
+
+Lock: 864: key pins:    |ST4|ST2|ST2|ST4|ST4|
+
+Lock: 865: key pins:    |ST4|ST2|ST3|ST1|ST1|
+
+Lock: 866: key pins:    |ST4|ST2|ST3|ST1|ST2|
+
+Lock: 867: key pins:    |ST4|ST2|ST3|ST1|ST3|
+
+Lock: 868: key pins:    |ST4|ST2|ST3|ST1|ST4|
+
+Lock: 869: key pins:    |ST4|ST2|ST3|ST2|ST1|
+
+Lock: 870: key pins:    |ST4|ST2|ST3|ST2|ST2|
+
+Lock: 871: key pins:    |ST4|ST2|ST3|ST2|ST3|
+
+Lock: 872: key pins:    |ST4|ST2|ST3|ST2|ST4|
+
+Lock: 873: key pins:    |ST4|ST2|ST3|ST3|ST1|
+
+Lock: 874: key pins:    |ST4|ST2|ST3|ST3|ST2|
+
+Lock: 875: key pins:    |ST4|ST2|ST3|ST3|ST3|
+
+Lock: 876: key pins:    |ST4|ST2|ST3|ST3|ST4|
+
+Lock: 877: key pins:    |ST4|ST2|ST3|ST4|ST1|
+
+Lock: 878: key pins:    |ST4|ST2|ST3|ST4|ST2|
+
+Lock: 879: key pins:    |ST4|ST2|ST3|ST4|ST3|
+
+Lock: 880: key pins:    |ST4|ST2|ST3|ST4|ST4|
+
+Lock: 881: key pins:    |ST4|ST2|ST4|ST1|ST1|
+
+Lock: 882: key pins:    |ST4|ST2|ST4|ST1|ST2|
+
+Lock: 883: key pins:    |ST4|ST2|ST4|ST1|ST3|
+
+Lock: 884: key pins:    |ST4|ST2|ST4|ST1|ST4|
+
+Lock: 885: key pins:    |ST4|ST2|ST4|ST2|ST1|
+
+Lock: 886: key pins:    |ST4|ST2|ST4|ST2|ST2|
+
+Lock: 887: key pins:    |ST4|ST2|ST4|ST2|ST3|
+
+Lock: 888: key pins:    |ST4|ST2|ST4|ST2|ST4|
+
+Lock: 889: key pins:    |ST4|ST2|ST4|ST3|ST1|
+
+Lock: 890: key pins:    |ST4|ST2|ST4|ST3|ST2|
+
+Lock: 891: key pins:    |ST4|ST2|ST4|ST3|ST3|
+
+Lock: 892: key pins:    |ST4|ST2|ST4|ST3|ST4|
+
+Lock: 893: key pins:    |ST4|ST2|ST4|ST4|ST1|
+
+Lock: 894: key pins:    |ST4|ST2|ST4|ST4|ST2|
+
+Lock: 895: key pins:    |ST4|ST2|ST4|ST4|ST3|
+
+Lock: 896: key pins:    |ST4|ST2|ST4|ST4|ST4|
+
+Lock: 897: key pins:    |ST4|ST3|ST1|ST1|ST1|
+
+Lock: 898: key pins:    |ST4|ST3|ST1|ST1|ST2|
+
+Lock: 899: key pins:    |ST4|ST3|ST1|ST1|ST3|
+
+Lock: 900: key pins:    |ST4|ST3|ST1|ST1|ST4|
+
+Lock: 901: key pins:    |ST4|ST3|ST1|ST2|ST1|
+
+Lock: 902: key pins:    |ST4|ST3|ST1|ST2|ST2|
+
+Lock: 903: key pins:    |ST4|ST3|ST1|ST2|ST3|
+
+Lock: 904: key pins:    |ST4|ST3|ST1|ST2|ST4|
+
+Lock: 905: key pins:    |ST4|ST3|ST1|ST3|ST1|
+
+Lock: 906: key pins:    |ST4|ST3|ST1|ST3|ST2|
+
+Lock: 907: key pins:    |ST4|ST3|ST1|ST3|ST3|
+
+Lock: 908: key pins:    |ST4|ST3|ST1|ST3|ST4|
+
+Lock: 909: key pins:    |ST4|ST3|ST1|ST4|ST1|
+
+Lock: 910: key pins:    |ST4|ST3|ST1|ST4|ST2|
+
+Lock: 911: key pins:    |ST4|ST3|ST1|ST4|ST3|
+
+Lock: 912: key pins:    |ST4|ST3|ST1|ST4|ST4|
+
+Lock: 913: key pins:    |ST4|ST3|ST2|ST1|ST1|
+
+Lock: 914: key pins:    |ST4|ST3|ST2|ST1|ST2|
+
+Lock: 915: key pins:    |ST4|ST3|ST2|ST1|ST3|
+
+Lock: 916: key pins:    |ST4|ST3|ST2|ST1|ST4|
+
+Lock: 917: key pins:    |ST4|ST3|ST2|ST2|ST1|
+
+Lock: 918: key pins:    |ST4|ST3|ST2|ST2|ST2|
+
+Lock: 919: key pins:    |ST4|ST3|ST2|ST2|ST3|
+
+Lock: 920: key pins:    |ST4|ST3|ST2|ST2|ST4|
+
+Lock: 921: key pins:    |ST4|ST3|ST2|ST3|ST1|
+
+Lock: 922: key pins:    |ST4|ST3|ST2|ST3|ST2|
+
+Lock: 923: key pins:    |ST4|ST3|ST2|ST3|ST3|
+
+Lock: 924: key pins:    |ST4|ST3|ST2|ST3|ST4|
+
+Lock: 925: key pins:    |ST4|ST3|ST2|ST4|ST1|
+
+Lock: 926: key pins:    |ST4|ST3|ST2|ST4|ST2|
+
+Lock: 927: key pins:    |ST4|ST3|ST2|ST4|ST3|
+
+Lock: 928: key pins:    |ST4|ST3|ST2|ST4|ST4|
+
+Lock: 929: key pins:    |ST4|ST3|ST3|ST1|ST1|
+
+Lock: 930: key pins:    |ST4|ST3|ST3|ST1|ST2|
+
+Lock: 931: key pins:    |ST4|ST3|ST3|ST1|ST3|
+
+Lock: 932: key pins:    |ST4|ST3|ST3|ST1|ST4|
+
+Lock: 933: key pins:    |ST4|ST3|ST3|ST2|ST1|
+
+Lock: 934: key pins:    |ST4|ST3|ST3|ST2|ST2|
+
+Lock: 935: key pins:    |ST4|ST3|ST3|ST2|ST3|
+
+Lock: 936: key pins:    |ST4|ST3|ST3|ST2|ST4|
+
+Lock: 937: key pins:    |ST4|ST3|ST3|ST3|ST1|
+
+Lock: 938: key pins:    |ST4|ST3|ST3|ST3|ST2|
+
+Lock: 939: key pins:    |ST4|ST3|ST3|ST3|ST3|
+
+Lock: 940: key pins:    |ST4|ST3|ST3|ST3|ST4|
+
+Lock: 941: key pins:    |ST4|ST3|ST3|ST4|ST1|
+
+Lock: 942: key pins:    |ST4|ST3|ST3|ST4|ST2|
+
+Lock: 943: key pins:    |ST4|ST3|ST3|ST4|ST3|
+
+Lock: 944: key pins:    |ST4|ST3|ST3|ST4|ST4|
+
+Lock: 945: key pins:    |ST4|ST3|ST4|ST1|ST1|
+
+Lock: 946: key pins:    |ST4|ST3|ST4|ST1|ST2|
+
+Lock: 947: key pins:    |ST4|ST3|ST4|ST1|ST3|
+
+Lock: 948: key pins:    |ST4|ST3|ST4|ST1|ST4|
+
+Lock: 949: key pins:    |ST4|ST3|ST4|ST2|ST1|
+
+Lock: 950: key pins:    |ST4|ST3|ST4|ST2|ST2|
+
+Lock: 951: key pins:    |ST4|ST3|ST4|ST2|ST3|
+
+Lock: 952: key pins:    |ST4|ST3|ST4|ST2|ST4|
+
+Lock: 953: key pins:    |ST4|ST3|ST4|ST3|ST1|
+
+Lock: 954: key pins:    |ST4|ST3|ST4|ST3|ST2|
+
+Lock: 955: key pins:    |ST4|ST3|ST4|ST3|ST3|
+
+Lock: 956: key pins:    |ST4|ST3|ST4|ST3|ST4|
+
+Lock: 957: key pins:    |ST4|ST3|ST4|ST4|ST1|
+
+Lock: 958: key pins:    |ST4|ST3|ST4|ST4|ST2|
+
+Lock: 959: key pins:    |ST4|ST3|ST4|ST4|ST3|
+
+Lock: 960: key pins:    |ST4|ST3|ST4|ST4|ST4|
+
+Lock: 961: key pins:    |ST4|ST4|ST1|ST1|ST1|
+
+Lock: 962: key pins:    |ST4|ST4|ST1|ST1|ST2|
+
+Lock: 963: key pins:    |ST4|ST4|ST1|ST1|ST3|
+
+Lock: 964: key pins:    |ST4|ST4|ST1|ST1|ST4|
+
+Lock: 965: key pins:    |ST4|ST4|ST1|ST2|ST1|
+
+Lock: 966: key pins:    |ST4|ST4|ST1|ST2|ST2|
+
+Lock: 967: key pins:    |ST4|ST4|ST1|ST2|ST3|
+
+Lock: 968: key pins:    |ST4|ST4|ST1|ST2|ST4|
+
+Lock: 969: key pins:    |ST4|ST4|ST1|ST3|ST1|
+
+Lock: 970: key pins:    |ST4|ST4|ST1|ST3|ST2|
+
+Lock: 971: key pins:    |ST4|ST4|ST1|ST3|ST3|
+
+Lock: 972: key pins:    |ST4|ST4|ST1|ST3|ST4|
+
+Lock: 973: key pins:    |ST4|ST4|ST1|ST4|ST1|
+
+Lock: 974: key pins:    |ST4|ST4|ST1|ST4|ST2|
+
+Lock: 975: key pins:    |ST4|ST4|ST1|ST4|ST3|
+
+Lock: 976: key pins:    |ST4|ST4|ST1|ST4|ST4|
+
+Lock: 977: key pins:    |ST4|ST4|ST2|ST1|ST1|
+
+Lock: 978: key pins:    |ST4|ST4|ST2|ST1|ST2|
+
+Lock: 979: key pins:    |ST4|ST4|ST2|ST1|ST3|
+
+Lock: 980: key pins:    |ST4|ST4|ST2|ST1|ST4|
+
+Lock: 981: key pins:    |ST4|ST4|ST2|ST2|ST1|
+
+Lock: 982: key pins:    |ST4|ST4|ST2|ST2|ST2|
+
+Lock: 983: key pins:    |ST4|ST4|ST2|ST2|ST3|
+
+Lock: 984: key pins:    |ST4|ST4|ST2|ST2|ST4|
+
+Lock: 985: key pins:    |ST4|ST4|ST2|ST3|ST1|
+
+Lock: 986: key pins:    |ST4|ST4|ST2|ST3|ST2|
+
+Lock: 987: key pins:    |ST4|ST4|ST2|ST3|ST3|
+
+Lock: 988: key pins:    |ST4|ST4|ST2|ST3|ST4|
+
+Lock: 989: key pins:    |ST4|ST4|ST2|ST4|ST1|
+
+Lock: 990: key pins:    |ST4|ST4|ST2|ST4|ST2|
+
+Lock: 991: key pins:    |ST4|ST4|ST2|ST4|ST3|
+
+Lock: 992: key pins:    |ST4|ST4|ST2|ST4|ST4|
+
+Lock: 993: key pins:    |ST4|ST4|ST3|ST1|ST1|
+
+Lock: 994: key pins:    |ST4|ST4|ST3|ST1|ST2|
+
+Lock: 995: key pins:    |ST4|ST4|ST3|ST1|ST3|
+
+Lock: 996: key pins:    |ST4|ST4|ST3|ST1|ST4|
+
+Lock: 997: key pins:    |ST4|ST4|ST3|ST2|ST1|
+
+Lock: 998: key pins:    |ST4|ST4|ST3|ST2|ST2|
+
+Lock: 999: key pins:    |ST4|ST4|ST3|ST2|ST3|
+
+Lock: 1 000: key pins:    |ST4|ST4|ST3|ST2|ST4|
+
+Lock: 1 001: key pins:    |ST4|ST4|ST3|ST3|ST1|
+
+Lock: 1 002: key pins:    |ST4|ST4|ST3|ST3|ST2|
+
+Lock: 1 003: key pins:    |ST4|ST4|ST3|ST3|ST3|
+
+Lock: 1 004: key pins:    |ST4|ST4|ST3|ST3|ST4|
+
+Lock: 1 005: key pins:    |ST4|ST4|ST3|ST4|ST1|
+
+Lock: 1 006: key pins:    |ST4|ST4|ST3|ST4|ST2|
+
+Lock: 1 007: key pins:    |ST4|ST4|ST3|ST4|ST3|
+
+Lock: 1 008: key pins:    |ST4|ST4|ST3|ST4|ST4|
+
+Lock: 1 009: key pins:    |ST4|ST4|ST4|ST1|ST1|
+
+Lock: 1 010: key pins:    |ST4|ST4|ST4|ST1|ST2|
+
+Lock: 1 011: key pins:    |ST4|ST4|ST4|ST1|ST3|
+
+Lock: 1 012: key pins:    |ST4|ST4|ST4|ST1|ST4|
+
+Lock: 1 013: key pins:    |ST4|ST4|ST4|ST2|ST1|
+
+Lock: 1 014: key pins:    |ST4|ST4|ST4|ST2|ST2|
+
+Lock: 1 015: key pins:    |ST4|ST4|ST4|ST2|ST3|
+
+Lock: 1 016: key pins:    |ST4|ST4|ST4|ST2|ST4|
+
+Lock: 1 017: key pins:    |ST4|ST4|ST4|ST3|ST1|
+
+Lock: 1 018: key pins:    |ST4|ST4|ST4|ST3|ST2|
+
+Lock: 1 019: key pins:    |ST4|ST4|ST4|ST3|ST3|
+
+Lock: 1 020: key pins:    |ST4|ST4|ST4|ST3|ST4|
+
+Lock: 1 021: key pins:    |ST4|ST4|ST4|ST4|ST1|
+
+Lock: 1 022: key pins:    |ST4|ST4|ST4|ST4|ST2|
+
+Lock: 1 023: key pins:    |ST4|ST4|ST4|ST4|ST3|
+
+Lock: 1 024: key pins:    |ST4|ST4|ST4|ST4|ST4|
+
