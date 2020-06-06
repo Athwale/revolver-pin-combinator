@@ -1,23 +1,23 @@
 Key pins:
-[ST-1-5, ST-2-6, ST-3-15, ST-4-4]
+[ST-1-7, ST-2-12, ST-3-31, ST-4-7]
 Driver pins:
-[ST-1-30]
+[ST-1-31]
 Springs:
 [ST-1-20]
 
 Summary:
-key pins:    30
-driver pins: 30
+key pins:    57
+driver pins: 31
 springs:     20
 Lock size:   5
 
 Calculating combinations:
 Depending on computer speed, number of pins in pin file and lock size, this can take a long time.
 
-key pin combinations:               1 023
+key pin combinations:               1 024
 driver pin combinations:            1
 spring combinations:                1
-Total lock configurations:          1 023
+Total lock configurations:          1 024
 
 Lock: 1:
 springs:     |ST1|ST1|ST1|ST1|ST1|
@@ -5133,4 +5133,9 @@ Lock: 1 023:
 springs:     |ST1|ST1|ST1|ST1|ST1|
 driver pins: |ST1|ST1|ST1|ST1|ST1|
 key pins:    |ST4|ST4|ST4|ST4|ST3|
+
+Lock: 1 024:
+springs:     |ST1|ST1|ST1|ST1|ST1|
+driver pins: |ST1|ST1|ST1|ST1|ST1|
+key pins:    |ST4|ST4|ST4|ST4|ST4|
 

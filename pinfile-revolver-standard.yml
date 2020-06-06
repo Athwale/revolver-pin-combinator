@@ -1,10 +1,10 @@
 # This file generates all possible standard pin only combinations for the revolver lock with these pins
 key-pins:
-  - ST-1-5
-  - ST-2-6
-  - ST-3-15
-  - ST-4-4
+  - ST-1-7
+  - ST-2-12
+  - ST-3-31
+  - ST-4-7
 driver-pins:
-  - ST-1-30
+  - ST-1-31
 springs:
   - ST-1-20
