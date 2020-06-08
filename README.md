@@ -4,7 +4,7 @@ Requires python3-more-itertools version 8.3.0+
 
 ### What this is
 A small program for generating pin combinations for the sparrows revolver lock.
-It comes with a pin database filled with pins and springs from my sparrows revolver.
+It comes with a pin database filled with pins and springs from my sparrows revolver and reload kit.
 It is likely that your lock came with a slightly different pin set. But you should
 be able to modify the pin database according to your lock with the information
 on this page.
