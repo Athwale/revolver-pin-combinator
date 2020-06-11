@@ -33,7 +33,7 @@ class Combinator:
         self._parser = optparse.OptionParser('Usage: pin-combinator.py -f PIN_FILE [options]\n\n'
                                              'pin-combinator.py -f pinfile-example.yml -l 4\n'
                                              'pin-combinator.py -f pinfile-example.yml -l 5 -s\n\n'
-                                             'For more information visit:'
+                                             'For more information please visit:'
                                              ' https://github.com/Athwale/revolver-pin-combinator')
 
         self._parser.add_option('-f', '--file', type='string',
